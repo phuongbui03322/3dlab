@@ -186,8 +186,8 @@ export default function SearchBar({
                         </div>
 
                         <span className="ml-4 shrink-0 font-semibold text-blue-600">
-                          {product.price.toLocaleString("vi-VN")}₫
-                        </span>
+  Liên hệ
+</span>
                       </Link>
                     ))}
                   </div>
