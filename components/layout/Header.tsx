@@ -4,11 +4,16 @@ import Link from "next/link";
 import { Menu, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 
+import { useCart } from "@/app/hooks/useCart";
+
 import MobileMenu from "./MobileMenu";
 import SearchBar from "./SearchBar";
+import CartDrawer from "@/components/cart/CartDrawer";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const { totalItems, openCart } = useCart();
 
   return (
     <>
@@ -33,16 +38,20 @@ export default function Header() {
             </Link>
 
             {/* Cart */}
-            <Link
-              href="/cart"
+            <button
+              type="button"
+              onClick={openCart}
               className="relative flex h-11 w-11 items-center justify-center rounded-full transition hover:bg-slate-100"
+              aria-label="Mở giỏ hàng"
             >
               <ShoppingCart size={22} />
 
-              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white">
-                0
-              </span>
-            </Link>
+              {totalItems > 0 && (
+                <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">
+                  {totalItems > 99 ? "99+" : totalItems}
+                </span>
+              )}
+            </button>
           </div>
 
           {/* Search */}
@@ -63,6 +72,8 @@ export default function Header() {
         open={menuOpen}
         onClose={() => setMenuOpen(false)}
       />
+
+      <CartDrawer />
     </>
   );
 }

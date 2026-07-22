@@ -42,6 +42,8 @@ export interface Product {
   // ========================
   price: number;
 
+  originalPrice?: number;
+
   oldPrice?: number;
 
   badge?: ProductBadge;

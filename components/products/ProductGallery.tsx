@@ -248,29 +248,25 @@ console.log(media);
                 VIDEO
               </div>
 
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
+              <div
+  onClick={(e) => {
+    e.stopPropagation();
 
-                  const videoIndex = media.findIndex(
-                    (item) => item.type === "video"
-                  );
+    const videoIndex = media.findIndex(
+      (item) => item.type === "video"
+    );
 
-                  if (videoIndex !== -1) {
-                    setActiveIndex(videoIndex);
-                    setLightboxOpen(true);
-                  }
-                }}
-                className="absolute inset-0 flex items-center justify-center"
-              >
-                <div className="rounded-full bg-white/90 p-3 shadow-lg transition hover:scale-110">
-                  <Play
-                    size={18}
-                    fill="currentColor"
-                  />
-                </div>
-              </button>
+    if (videoIndex !== -1) {
+      setActiveIndex(videoIndex);
+      setLightboxOpen(true);
+    }
+  }}
+  className="absolute inset-0 flex cursor-pointer items-center justify-center"
+>
+  <div className="rounded-full bg-white/90 p-3 shadow-lg transition hover:scale-110">
+    <Play size={18} fill="currentColor" />
+  </div>
+</div>
             </>
           )}
         </button>

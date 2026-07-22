@@ -3,6 +3,9 @@ import { Manrope } from "next/font/google";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "sonner";
+
+import { CartProvider } from "@/app/context/CartContext";
 
 import "./globals.css";
 
@@ -39,16 +42,20 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-screen flex-col bg-white font-sans text-slate-900">
-        {/* Header */}
-        <Header />
+        <CartProvider>
+          <Header />
 
-        {/* Nội dung */}
-        <main className="relative z-0 flex-1 pt-28 md:pt-16">
-          {children}
-        </main>
+          <main className="relative z-0 flex-1 pt-28 md:pt-16">
+            {children}
+          </main>
 
-        {/* Footer */}
-        <Footer />
+          <Footer />
+          <Toaster
+  position="top-center"
+  richColors
+  closeButton
+/>
+        </CartProvider>
       </body>
     </html>
   );
