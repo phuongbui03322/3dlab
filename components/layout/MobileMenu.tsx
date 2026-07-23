@@ -215,10 +215,19 @@ export default function MobileMenu({
 
         {/* Bottom */}
         <div className="border-t bg-white p-4">
-          <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
-            <Wand2 size={16} />
-            Đặt in theo yêu cầu
-          </button>
+          <button
+  onClick={() => {
+    onClose();
+    window.open(
+      "https://m.me/1151757441360383",
+      "_blank"
+    );
+  }}
+  className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+>
+  <Wand2 size={16} />
+  Đặt in theo yêu cầu
+</button>
         </div>
       </aside>
 
