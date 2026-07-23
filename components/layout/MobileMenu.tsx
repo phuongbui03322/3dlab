@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCartContext } from "@/app/context/CartContext";
+import { featuredProducts } from "@/data/featuredProducts";
 import {
   X,
   Home,
@@ -12,7 +13,12 @@ import {
   Wand2,
   ChevronRight,
 } from "lucide-react";
-import { useEffect, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
 
 interface MobileMenuProps {
   open: boolean;
@@ -27,6 +33,16 @@ export default function MobileMenu({
 }: MobileMenuProps) {
   const { openCart } = useCartContext();
   const [aboutOpen, setAboutOpen] = useState(false);
+
+  const categoryCount = useMemo(() => {
+  return featuredProducts.reduce<Record<string, number>>(
+    (acc, product) => {
+      acc[product.category] = (acc[product.category] || 0) + 1;
+      return acc;
+    },
+    {}
+  );
+}, []);
 
   useEffect(() => {
     document.body.style.overflow =
@@ -104,32 +120,37 @@ export default function MobileMenu({
             <div className="my-2 border-t" />
 
             <CategoryItem
-              title="Anime"
-              href="/collections/anime"
-              onClose={onClose}
-            />
+  title="Anime"
+  href="/collections/anime"
+  count={categoryCount["Anime"] ?? 0}
+  onClose={onClose}
+/>
 
             <CategoryItem
               title="Marvel"
               href="/collections/marvel"
+              count={categoryCount["Marvel"] ?? 0}
               onClose={onClose}
             />
 
             <CategoryItem
               title="DC"
               href="/collections/dc"
+              count={categoryCount["DC"] ?? 0}
               onClose={onClose}
             />
 
             <CategoryItem
               title="Dragon Ball"
               href="/collections/dragon-ball"
+              count={categoryCount["Dragon Ball"] ?? 0}
               onClose={onClose}
             />
 
             <CategoryItem
   title="Cartoon"
   href="/collections/cartoon"
+  count={categoryCount["Cartoon"] ?? 0}
   onClose={onClose}
 />
 
@@ -137,6 +158,7 @@ export default function MobileMenu({
             <CategoryItem
               title="Game"
               href="/collections/game"
+              count={categoryCount["Game"] ?? 0}
               onClose={onClose}
             />
 
@@ -287,10 +309,12 @@ function MenuItem({
 function CategoryItem({
   title,
   href,
+  count,
   onClose,
 }: {
   title: string;
   href: string;
+  count: number;
   onClose: () => void;
 }) {
   return (
@@ -312,7 +336,13 @@ function CategoryItem({
         hover:text-blue-600
       "
     >
-      <span>{title}</span>
+      <div className="flex items-center gap-2">
+        <span>{title}</span>
+
+        <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-500">
+          {count}
+        </span>
+      </div>
 
       <ChevronRight
         size={16}
