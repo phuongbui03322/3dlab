@@ -75,20 +75,7 @@ export default function CustomPrint() {
 
           {/* CTA */}
           <div className="mx-auto mt-16 flex w-full max-w-xl gap-4">
-            <Link
-              href="/custom-print"
-              className="flex h-14 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-blue-600 px-6 font-semibold text-white transition hover:bg-blue-700"
-            >
-              Đặt in ngay
-              <ArrowRight size={18} />
-            </Link>
-
-            <Link
-              href="/contact"
-              className="flex h-14 flex-1 items-center justify-center whitespace-nowrap rounded-xl border border-slate-300 px-6 font-semibold text-slate-700 transition hover:bg-slate-100"
-            >
-              Liên hệ tư vấn
-            </Link>
+            
           </div>
         </div>
       </div>

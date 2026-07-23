@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useCartContext } from "@/app/context/CartContext";
 import {
   X,
   Home,
@@ -24,6 +25,7 @@ export default function MobileMenu({
   open,
   onClose,
 }: MobileMenuProps) {
+  const { openCart } = useCartContext();
   const [aboutOpen, setAboutOpen] = useState(false);
 
   useEffect(() => {
@@ -147,12 +149,30 @@ export default function MobileMenu({
               onClose={onClose}
             />
 
-            <MenuItem
-              icon={<ShoppingCart size={18} />}
-              title="Giỏ hàng"
-              href="/cart"
-              onClose={onClose}
-            />
+            <button
+  onClick={() => {
+    onClose();
+    openCart();
+  }}
+  className="
+    flex
+    w-full
+    items-center
+    gap-3
+    rounded-xl
+    px-3
+    py-2.5
+    text-[15px]
+    font-medium
+    transition-all
+    duration-200
+    hover:bg-blue-100
+    hover:text-blue-600
+  "
+>
+  <ShoppingCart size={18} />
+  <span>Giỏ hàng</span>
+</button>
 
             <MenuItem
               icon={<Phone size={18} />}
