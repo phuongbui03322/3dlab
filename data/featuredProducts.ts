@@ -141,7 +141,9 @@ export const featuredProducts: Product[] = [
     id: 9,
     slug: "MECHA-BLASTOISE",
     name: "MECHA BLASTOISE – HUYỀN THOẠI POKÉMON PHIÊN BẢN CƠ KHÍ!",
-    price: 0,
+    price: 750000,
+    description:
+    "📏 Kích thước: 25cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
     image: "/images/products/r1.png",
     gallery: [
     "/images/products/r1.png",
@@ -155,7 +157,9 @@ export const featuredProducts: Product[] = [
     id: 10,
     slug: "CHIBI-BLASTOISE",
     name: "CHIBI BLASTOISE – NHỎ NHẮN, ĐÁNG YÊU NHƯNG ĐẦY SỨC MẠNH!",
-    price: 0,
+    price: 290000,
+    description:
+    "📏 Kích thước: 15cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
     image: "/images/products/a1.png",
     gallery: [
     "/images/products/a1.png",
