@@ -6,7 +6,6 @@ import { Minus, Plus } from "lucide-react";
 import type { Product } from "@/types/product";
 
 import ProductBadge from "./ProductBadge";
-import ProductPrice from "./ProductPrice";
 import ProductRating from "./ProductRating";
 import { useCart } from "@/app/hooks/useCart";
 
@@ -30,7 +29,9 @@ export default function ProductInfo({
   const [selectedColor, setSelectedColor] = useState(
     product.colors?.[0] ?? ""
   );
-const { addToCart } = useCart();
+
+  const { addToCart } = useCart();
+
   return (
     <div className="space-y-6">
 
@@ -67,29 +68,32 @@ const { addToCart } = useCart();
         )}
       </div>
 
+      {/* Giá sản phẩm */}
       <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6">
-  <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">
-    Giá sản phẩm
-  </p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">
+          Giá sản phẩm
+        </p>
 
-  <h2 className="mt-2 text-3xl font-extrabold text-slate-900">
-    Giá tính theo kích thước
-  </h2>
+        <h2 className="mt-2 text-3xl font-extrabold text-slate-900">
+          {product.price.toLocaleString("vi-VN")}đ
+        </h2>
 
-  <p className="mt-3 text-slate-600">
-    Mỗi mẫu có nhiều kích thước khác nhau. Vui lòng liên hệ để nhận báo giá
-    chính xác theo kích thước bạn mong muốn.
-  </p>
+        {/* Kích thước cố định */}
+        {product.size && (
+          <p className="mt-3 text-base font-semibold text-slate-700">
+            📏 Kích thước: {product.size}
+          </p>
+        )}
 
-  <a
-    href="https://m.me/1151757441360383"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-6 inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-base font-semibold text-white transition hover:bg-blue-700"
-  >
-    💬 Liên hệ Shop
-  </a>
-</div>
+        <a
+          href="https://m.me/1151757441360383"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-base font-semibold text-white transition hover:bg-blue-700"
+        >
+          💬 Liên hệ: Tuỳ chọn kích thước
+        </a>
+      </div>
 
       {/* Cam kết */}
       <ProductGuarantee />
@@ -107,7 +111,7 @@ const { addToCart } = useCart();
         )}
       </div>
 
-      {/* Kích thước */}
+      {/* Kích thước - dành cho sản phẩm có nhiều lựa chọn */}
       {product.sizes && product.sizes.length > 0 && (
         <div className="space-y-3">
           <p className="font-semibold text-slate-900">
@@ -158,7 +162,8 @@ const { addToCart } = useCart();
           </div>
         </div>
       )}
-            {/* Số lượng */}
+
+      {/* Số lượng */}
       <div className="space-y-3">
         <p className="font-semibold text-slate-900">
           Số lượng
@@ -191,15 +196,15 @@ const { addToCart } = useCart();
         </div>
       </div>
 
-            {/* Thông số */}
+      {/* Thông số */}
       <ProductSpecs product={product} />
 
       {/* Nút hành động */}
       <ProductActions
-  onAddToCart={() =>
-    addToCart(product, quantity)
-  }
-/>
+        onAddToCart={() =>
+          addToCart(product, quantity)
+        }
+      />
     </div>
   );
 }

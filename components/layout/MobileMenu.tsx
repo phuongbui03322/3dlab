@@ -161,6 +161,12 @@ export default function MobileMenu({
               count={categoryCount["Game"] ?? 0}
               onClose={onClose}
             />
+            <CategoryItem
+  title="Pokemon"
+  href="/collections/pokemon"
+  count={categoryCount["Pokemon"] ?? 0}
+  onClose={onClose}
+/>
 
             <div className="my-2 border-t" />
 

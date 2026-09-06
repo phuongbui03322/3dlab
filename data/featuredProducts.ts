@@ -6,7 +6,7 @@ export const featuredProducts: Product[] = [
     id: 1,
     slug: "SONIVERINE",
     name: "⚔️ SONIVERINE – SONIC HÓA THÂN THÀNH WOLVERINE!",
-    price: 999000,
+    price: 0,
     image: "/images/products/x1.jpg",
     gallery: [
     "/images/products/x1.jpg",
@@ -25,7 +25,7 @@ export const featuredProducts: Product[] = [
     id: 2,
     slug: "HULK",
     name: "HULK – CỖ MÁY SỨC MẠNH CỦA MARVEL",
-    price: 999000,
+    price: 0,
     image: "/images/products/u1.jpg",
     gallery: [
     "/images/products/u1.jpg",
@@ -43,7 +43,7 @@ export const featuredProducts: Product[] = [
     id: 3,
     slug: "GARFIELD",
     name: "GARFIELD x THOR – Mèo Lười Hóa Thần Sấm",
-    price: 899000,
+    price: 0,
     image: "/images/products/meo1.png",
     gallery: [
     "/images/products/meo1.png",
@@ -59,7 +59,7 @@ export const featuredProducts: Product[] = [
     id: 4,
     slug: "ZORO",
     name: "ZORO URBAN VIBES – CHẤT ĐƯỜNG PHỐ, CHUẨN KIẾM SĨ! ",
-    price: 1099000,
+    price: 0,
     image: "/images/products/z1.png",
     gallery: [
     "/images/products/z1.png",
@@ -77,7 +77,7 @@ export const featuredProducts: Product[] = [
     id: 5,
     slug: "DAFFY",
     name: "🪓 DAFFY DUCK x KRATOS – CHIẾN THẦN PHIÊN BẢN HÀI HƯỚC! ",
-    price: 699000,
+    price: 0,
     image: "/images/products/v1.png",
     gallery: [
     "/images/products/v1.png",
@@ -95,7 +95,7 @@ export const featuredProducts: Product[] = [
     id: 6,
     slug: "CLASSIC-SONIC",
     name: "💙 CLASSIC SONIC – HUYỀN THOẠI GAME TUỔI THƠ ĐÃ TRỞ LẠI!",
-    price: 799000,
+    price: 0,
     image: "/images/products/s1.png",
     gallery: [
     "/images/products/s1.png",
@@ -111,7 +111,7 @@ export const featuredProducts: Product[] = [
     id: 7,
     slug: "LUFFY-MONKEY",
     name: "🏴‍☠️ MONKEY D. LUFFY – THUYỀN TRƯỞNG MŨ RƠM HUYỀN THOẠI! 👒",
-    price: 899000,
+    price: 0,
     image: "/images/products/l2.png",
     gallery: [
     "/images/products/l2.png",
@@ -126,7 +126,7 @@ export const featuredProducts: Product[] = [
     id: 8,
     slug: "ALMEIRAS-MASCOT",
     name: "PALMEIRAS MASCOT – LINH VẬT CƠ BẮP ĐẦY SỨC MẠNH!",
-    price: 999000,
+    price: 0,
     image: "/images/products/h2.png",
     gallery: [
     "/images/products/h1.png",
@@ -141,21 +141,21 @@ export const featuredProducts: Product[] = [
     id: 9,
     slug: "MECHA-BLASTOISE",
     name: "MECHA BLASTOISE – HUYỀN THOẠI POKÉMON PHIÊN BẢN CƠ KHÍ!",
-    price: 699000,
+    price: 0,
     image: "/images/products/r1.png",
     gallery: [
     "/images/products/r1.png",
     "/images/products/r2.png",
     "/images/products/r3.png",
   ],
-    category: "Anime",
+    category: "Pokemon",
     rating: 5,
   },
   {
     id: 10,
     slug: "CHIBI-BLASTOISE",
     name: "CHIBI BLASTOISE – NHỎ NHẮN, ĐÁNG YÊU NHƯNG ĐẦY SỨC MẠNH!",
-    price: 799000,
+    price: 0,
     image: "/images/products/a1.png",
     gallery: [
     "/images/products/a1.png",
@@ -165,14 +165,14 @@ export const featuredProducts: Product[] = [
     "/images/products/a5.png",
     "/images/products/a6.png",
   ],
-    category: "Anime",
+    category: "Pokemon",
     rating: 5,
   },
   {
     id: 11,
     slug: "BUZZ-LIGHTYEAR",
     name: "🚀 BUZZ LIGHTYEAR – SẴN SÀNG CHO MỘT CHUYẾN PHIÊU LƯU MỚI",
-    price: 899000,
+    price: 0,
     image: "/images/products/c1.png",
     gallery: [
     "/images/products/c1.png",
@@ -189,7 +189,7 @@ export const featuredProducts: Product[] = [
     id: 12,
     slug: "SUPER-MARIO",
     name: "🍄 SUPER MARIO – BIỂU TƯỢNG HUYỀN THOẠI CỦA LÀNG GAME!",
-    price: 899000,
+    price: 0,
     image: "/images/products/b1.png",
     gallery: [
     "/images/products/b1.png",
@@ -204,7 +204,7 @@ export const featuredProducts: Product[] = [
     id: 13,
     slug: "MAJIN-BUU",
     name: "MAJIN BUU – SỨC MẠNH HỦY DIỆT TRONG PHIÊN BẢN REALISTIC!",
-    price: 999000,
+    price: 0,
     image: "/images/products/d1.png",
     gallery: [
     "/images/products/d1.png",
@@ -220,7 +220,7 @@ export const featuredProducts: Product[] = [
     id: 14,
     slug: "CHIBI-IRON-MAN",
     name: "CHIBI IRON MAN – SIÊU ANH HÙNG MARVEL PHIÊN BẢN CỰC ĐÁNG YÊU!",
-    price: 1099000,
+    price: 0,
     image: "/images/products/e1.png",
     gallery: [
     "/images/products/e1.png",
@@ -236,7 +236,7 @@ export const featuredProducts: Product[] = [
     id: 15,
     slug: "MICKEY-MOUSE",
     name: "MICKEY MOUSE – BIỂU TƯỢNG HOẠT HÌNH HUYỀN THOẠI! ",
-    price: 999000,
+    price: 0,
     image: "/images/products/f1.png",
     gallery: [
     "/images/products/f1.png",
@@ -252,7 +252,7 @@ export const featuredProducts: Product[] = [
     id: 16,
     slug: "VEGETA-SUPER-SAIYAN",
     name: "VEGETA SUPER SAIYAN – HOÀNG TỬ SAIYAN ĐẦY KIÊU HÃNH!",
-    price: 899000,
+    price: 0,
     image: "/images/products/g1.png",
     gallery: [
     "/images/products/g1.png",
@@ -268,7 +268,7 @@ export const featuredProducts: Product[] = [
     id: 17,
     slug: "GOGETA",
     name: "GOGETA – CHIẾN BINH HỢP THỂ HUYỀN THOẠI!",
-    price: 899000,
+    price: 0,
     image: "/images/products/h8.png",
     gallery: [
     "/images/products/h8.png",
@@ -284,7 +284,7 @@ export const featuredProducts: Product[] = [
     id: 18,
     slug: "VEGETA",
     name: "VEGETA – HOÀNG TỬ SAIYAN ĐẦY KIÊU HÃNH!",
-    price: 999000,
+    price: 0,
     image: "/images/products/j1.png",
     gallery: [
     "/images/products/j1.png",
@@ -302,7 +302,7 @@ export const featuredProducts: Product[] = [
     id: 19,
     slug: "MUSCLE-MARIO",
     name: "MUSCLE MARIO – KHI HUYỀN THOẠI TRỞ NÊN CỰC KỲ CƠ BẮP",
-    price: 999000,
+    price: 0,
     image: "/images/products/k1.jpg",
     gallery: [
     "/images/products/k1.jpg",
@@ -320,7 +320,7 @@ export const featuredProducts: Product[] = [
     id: 20,
     slug: "SUPERSONIC",
     name: "SUPERSONIC – KHI SONIC TRỞ THÀNH SIÊU ANH HÙNG",
-    price: 999000,
+    price: 0,
     image: "/images/products/mav.jpg",
     gallery: [
     "/images/products/mav.jpg",
@@ -338,7 +338,7 @@ export const featuredProducts: Product[] = [
     id: 21,
     slug: "MICKEY-MOUSE",
     name: "MICKEY MOUSE PEAKY BLINDERS – QUÝ ÔNG CỔ ĐIỂN ĐẦY PHONG CÁCH!",
-    price: 1099000,
+    price: 0,
     image: "/images/products/q1.jpg",
     gallery: [
     "/images/products/q1.jpg",
@@ -356,7 +356,7 @@ export const featuredProducts: Product[] = [
     id: 22,
     slug: "LUFFY-URBAN-VIBES",
     name: "LUFFY URBAN VIBES – THUYỀN TRƯỞNG MŨ RƠM PHONG CÁCH STREETWEAR!",
-    price: 899000,
+    price: 0,
     image: "/images/products/ư1.jpg",
     gallery: [
     "/images/products/ư1.jpg",
@@ -374,7 +374,7 @@ export const featuredProducts: Product[] = [
     id: 23,
     slug: "MOON-KNIGHT",
     name: "MOON KNIGHT – CHIẾN BINH CỦA THẦN MẶT TRĂNG!",
-    price: 999000,
+    price: 0,
     image: "/images/products/y1.jpg",
     gallery: [
     "/images/products/y1.jpg",
@@ -392,7 +392,7 @@ export const featuredProducts: Product[] = [
     id: 24,
     slug: "SUPER-KNUCKLES",
     name: "SUPER KNUCKLES – KHI KNUCKLES TRỞ THÀNH SIÊU ANH HÙNG!",
-    price: 799000,
+    price: 0,
     image: "/images/products/i1.jpg",
     gallery: [
     "/images/products/i1.jpg",
@@ -409,7 +409,7 @@ export const featuredProducts: Product[] = [
     id: 25,
     slug: "MONKEY-D.LUFFY",
     name: "MONKEY D. LUFFY – THUYỀN TRƯỞNG MŨ RƠM",
-    price: 899000,
+    price: 0,
     image: "/images/products/1q.png",
     gallery: [
     "/images/products/1q.png",
@@ -427,7 +427,7 @@ export const featuredProducts: Product[] = [
     id: 26,
     slug: "HE-MAN",
     name: "HE-MAN – CHIẾN BINH MẠNH NHẤT ETERNIA!",
-    price: 999000,
+    price: 0,
     image: "/images/products/hm.jpg",
     gallery: [
     "/images/products/hm.jpg",
@@ -449,7 +449,7 @@ export const featuredProducts: Product[] = [
     id: 27,
     slug: "BUZZ-LIGHTYEAR-MODULAR",
     name: "BUZZ LIGHTYEAR MODULAR – PHI HÀNH GIA HUYỀN THOẠI PHIÊN BẢN BLOCKY!",
-    price: 999000,
+    price: 0,
     image: "/images/products/qư.jpg",
     gallery: [
     "/images/products/qư.jpg",
@@ -471,7 +471,7 @@ export const featuredProducts: Product[] = [
     id: 28,
     slug: "LEONARDO1",
     name: "LEONARDO – THỦ LĨNH NINJA RÙA PHIÊN BẢN MODULAR",
-    price: 699000,
+    price: 0,
     image: "/images/products/qe.jpg",
     gallery: [
     "/images/products/qe.jpg",
@@ -494,7 +494,7 @@ export const featuredProducts: Product[] = [
     id: 29,
     slug: "MONKEY-D.LUFFY-MODULAR",
     name: "MONKEY D. LUFFY MODULAR – THUYỀN TRƯỞNG MŨ RƠM PHIÊN BẢN BLOCKY!",
-    price: 699000,
+    price: 0,
     image: "/images/products/qr.jpg",
     gallery: [
     "/images/products/qr.jpg",
@@ -516,7 +516,7 @@ export const featuredProducts: Product[] = [
     id: 30,
     slug: "WOLVERINE-MODULAR1",
     name: "WOLVERINE MODULAR – DỊ NHÂN HUYỀN THOẠI PHIÊN BẢN BLOCKY!",
-    price: 599000,
+    price: 0,
     image: "/images/products/qt.jpg",
     gallery: [
     "/images/products/qt.jpg",
@@ -538,7 +538,7 @@ export const featuredProducts: Product[] = [
     id: 31,
     slug: "SPAWN",
     name: "SPAWN – CHIẾN BINH ĐỊA NGỤC HUYỀN THOẠI!",
-    price: 599000,
+    price: 0,
     image: "/images/products/qy.png",
     gallery: [
     "/images/products/qy.png",
@@ -553,6 +553,495 @@ export const featuredProducts: Product[] = [
     "/images/products/qy9.jpg",
   ],
     category: "Marvel",
+    rating: 5,
+  },
+    {
+    id: 32,
+    slug: "Magikarp",
+    name: "MAGIKARP – CÁ CHÉP HUYỀN THOẠI POKÉMON",
+    price: 115000,
+    description:
+      "📏 Kích thước: 14 cm\n\nMô hình Magikarp Pokémon được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/Magikarp/2.jpg",
+    gallery: [
+      "/images/products/Magikarp/2.jpg",
+      "/images/products/Magikarp/3.jpg",
+      "/images/products/Magikarp/4.jpg",
+      "/images/products/Magikarp/5.jpg",
+    ],
+    video: "/images/products/Magikarp/1.mp4",
+    videoThumbnail: "/images/products/Magikarp/2.jpg",
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 33,
+    slug: "MEGA_CHARIZARD_X",
+    name: "MEGA CHARIZARD X – RỒNG LỬA XANH HUYỀN THOẠI",
+    price: 510000,
+    description:
+      "📏 Kích thước: 43 cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/MEGA_CHARIZARD_X/1.jpg",
+    gallery: [
+      "/images/products/MEGA_CHARIZARD_X/1.jpg",
+      "/images/products/MEGA_CHARIZARD_X/2.jpg",
+      "/images/products/MEGA_CHARIZARD_X/3.jpg",
+      "/images/products/MEGA_CHARIZARD_X/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 34,
+    slug: "LUGIA",
+    name: "LUGIA – VỊ THẦN BIỂN CẢ HUYỀN THOẠI POKÉMON” 🌊⚡",
+    price: 300000,
+    description:
+      "📏 Kích thước: 30.8 cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/Lugia/1.jpg",
+    gallery: [
+      "/images/products/Lugia/1.jpg",
+      "/images/products/Lugia/2.jpg",
+      "/images/products/Lugia/3.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 35,
+    slug: "AERODACTYL",
+    name: "AERODACTYL – KHỦNG LONG BAY HUYỀN THOẠI POKÉMON” 🦖🪽🔥",
+    price: 270000,
+    description:
+      "📏 Kích thước: 29cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/AERODACTYL/1.jpg",
+    gallery: [
+      "/images/products/AERODACTYL/1.jpg",
+      "/images/products/AERODACTYL/2.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 36,
+    slug: "SNORLAX",
+    name: "SNORLAX – GẤU NGỦ KHỔNG LỒ POKÉMON 😴💤",
+    price: 360000,
+    description:
+      "📏 Kích thước: 21cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SNORLAX/1.jpg",
+    gallery: [
+      "/images/products/SNORLAX/1.jpg",
+      "/images/products/SNORLAX/2.jpg",
+      "/images/products/SNORLAX/3.jpg",
+      "/images/products/SNORLAX/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 37,
+    slug: "PIKACHU",
+    name: "PIKACHU – LINH VẬT ĐIỆN HUYỀN THOẠI POKÉMON ⚡✨",
+    price: 85000,
+    description:
+      "📏 Kích thước: 11cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/PIKACHU/1.jpg",
+    gallery: [
+      "/images/products/PIKACHU/1.jpg",
+      "/images/products/PIKACHU/2.jpg",
+      
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 38,
+    slug: "POLIWRATH",
+    name: "POLIWRATH – ẾCH NƯỚC HUYỀN THOẠI POKÉMON 🌊🥊",
+    price: 85000,
+    description:
+      "📏 Kích thước: 11cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/POLIWRATH/1.jpg",
+    gallery: [
+      "/images/products/POLIWRATH/1.jpg",
+      "/images/products/POLIWRATH/2.jpg",
+      "/images/products/POLIWRATH/3.jpg",
+      "/images/products/POLIWRATH/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 39,
+    slug: "KRABBY",
+    name: "KRABBY – CUA ĐỎ HUNG HĂNG POKÉMON 🦀🔥",
+    price: 105000,
+    description:
+      "📏 Kích thước: 10cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/KRABBY/1.jpg",
+    gallery: [
+      "/images/products/KRABBY/1.jpg",
+      "/images/products/KRABBY/2.jpg",
+      "/images/products/KRABBY/3.jpg",
+      "/images/products/KRABBY/4.jpg",
+      "/images/products/KRABBY/5.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 40,
+    slug: "CORPHISH",
+    name: "CORPHISH – CHIẾN BINH CUA ĐỎ POKÉMON 🦀⚔️",
+    price: 105000,
+    description:
+      "📏 Kích thước: 10cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/CORPHISH/1.jpg",
+    gallery: [
+      "/images/products/CORPHISH/1.jpg",
+      "/images/products/CORPHISH/2.jpg",
+      "/images/products/CORPHISH/3.jpg",
+      "/images/products/CORPHISH/4.jpg",
+      "/images/products/CORPHISH/5.jpg",
+      "/images/products/CORPHISH/7.jpg",
+      "/images/products/CORPHISH/6.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 41,
+    slug: "SCEPTILE",
+    name: "SCEPTILE – CHIẾN BINH CỎ HUYỀN THOẠI POKÉMON” 🌿🔥",
+    price: 140000,
+    description:
+      "📏 Kích thước: 17cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SCEPTILE/1.jpg",
+    gallery: [
+      "/images/products/SCEPTILE/1.jpg",
+      "/images/products/SCEPTILE/2.jpg",
+      "/images/products/SCEPTILE/3.jpg",
+      "/images/products/SCEPTILE/4.jpg",
+      "/images/products/SCEPTILE/5.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+    id: 42,
+    slug: "RAYQUAZA",
+    name: "RAYQUAZA – RỒNG HUYỀN THOẠI BẦU TRỜI POKÉMON 🐉🌌",
+    price: 270000,
+    description:
+      "📏 Kích thước: 23cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/RAYQUAZA/1.jpg",
+    gallery: [
+      "/images/products/RAYQUAZA/1.jpg",
+      "/images/products/RAYQUAZA/2.jpg",
+      "/images/products/RAYQUAZA/3.jpg",
+      "/images/products/RAYQUAZA/4.jpg",
+      "/images/products/RAYQUAZA/5.jpg",
+      "/images/products/RAYQUAZA/6.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 43,
+    slug: "PALKIA",
+    name: "PALKIA – LONG THẦN KHÔNG GIAN POKÉMON 🐉⚡",
+    price: 395000,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/PALKIA/1.jpg",
+    gallery: [
+      "/images/products/PALKIA/1.jpg",
+      "/images/products/PALKIA/2.jpg",
+      "/images/products/PALKIA/3.jpg",
+      
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 44,
+    slug: "DIALGA",
+    name: "DIALGA – THẦN THỜI GIAN HUYỀN THOẠI POKÉMON ⏳🐉💙",
+    price: 300000,
+    description:
+      "📏 Kích thước: 29cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/DIALGA/1.jpg",
+    gallery: [
+      "/images/products/DIALGA/1.jpg",
+      "/images/products/DIALGA/2.jpg",
+      "/images/products/DIALGA/3.jpg",
+      "/images/products/DIALGA/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 45,
+    slug: "GROUDON",
+    name: "GROUDON – THẦN ĐẤT ĐỎ HUYỀN THOẠI POKÉMON 🌋🐉🔥",
+    price: 325000,
+    description:
+      "📏 Kích thước: 20cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/GROUDON/1.jpg",
+    gallery: [
+      "/images/products/GROUDON/1.jpg",
+      "/images/products/GROUDON/2.jpg",
+      "/images/products/GROUDON/3.jpg",
+      "/images/products/GROUDON/4.jpg",
+      "/images/products/GROUDON/5.jpg",
+      "/images/products/GROUDON/6.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 46,
+    slug: "GIRATINA",
+    name: "GIRATINA – QUỶ LONG HỖN MANG HUYỀN THOẠI POKÉMON 👿🐉🔥",
+    price: 255000,
+    description:
+      "📏 Kích thước: 17cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/GIRATINA/1.jpg",
+    gallery: [
+      "/images/products/GIRATINA/1.jpg",
+      "/images/products/GIRATINA/2.jpg",
+      "/images/products/GIRATINA/3.jpg",
+      "/images/products/GIRATINA/4.jpg",
+      "/images/products/GIRATINA/5.jpg",
+      "/images/products/GIRATINA/6.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 47,
+    slug: "RESHIRAM",
+    name: "RESHIRAM – BẠCH LONG HUYỀN THOẠI POKÉMON 🐉🔥⚪",
+    price: 315000,
+    description:
+      "📏 Kích thước: 20cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/RESHIRAM/1.jpg",
+    gallery: [
+      "/images/products/RESHIRAM/1.jpg",
+      "/images/products/RESHIRAM/2.jpg",
+      "/images/products/RESHIRAM/3.jpg",
+      "/images/products/RESHIRAM/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 48,
+    slug: "GENGAR",
+    name: "GENGAR – BÓNG MA HUYỀN THOẠI POKÉMON 👻💜✨",
+    price: 65000,
+    description:
+      "📏 Kích thước: 9cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/GENGAR/1.jpg",
+    gallery: [
+      "/images/products/GENGAR/1.jpg",
+      "/images/products/GENGAR/2.jpg",
+      "/images/products/GENGAR/3.jpg",
+      "/images/products/GENGAR/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 49,
+    slug: "MEGA_AMPHAROS",
+    name: "MEGA AMPHAROS – RỒNG ĐIỆN HUYỀN THOẠI POKÉMON ⚡🐉💛",
+    price: 85000,
+    description:
+      "📏 Kích thước: 9cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/MEGA_AMPHAROS/1.jpg",
+    gallery: [
+      "/images/products/MEGA_AMPHAROS/1.jpg",
+      "/images/products/MEGA_AMPHAROS/2.jpg",
+      "/images/products/MEGA_AMPHAROS/3.jpg",
+      "/images/products/MEGA_AMPHAROS/4.jpg",
+      "/images/products/MEGA_AMPHAROS/5.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 50,
+    slug: "ASH_GRENINJA",
+    name: "ASH GRENINJA – NINJA NƯỚC HUYỀN THOẠI POKÉMON 🌊🥷💙",
+    price: 120000,
+    description:
+      "📏 Kích thước: 9cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/ASH_GRENINJA/1.jpg",
+    gallery: [
+      "/images/products/ASH_GRENINJA/1.jpg",
+      "/images/products/ASH_GRENINJA/2.jpg",
+      "/images/products/ASH_GRENINJA/3.jpg",
+      "/images/products/ASH_GRENINJA/4.jpg",
+      "/images/products/ASH_GRENINJA/5.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 51,
+    slug: "HO_OH",
+    name: "HO-OH – PHƯỢNG HOÀNG LỬA HUYỀN THOẠI POKÉMON 🔥🪽✨",
+    price: 205000,
+    description:
+      "📏 Kích thước: 17cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/HO_OH/1.jpg",
+    gallery: [
+      "/images/products/HO_OH/1.jpg",
+      "/images/products/HO_OH/2.jpg",
+      "/images/products/HO_OH/3.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 52,
+    slug: "CHARIZARD1",
+    name: "CHARIZARD1 – HỎA LONG HUYỀN THOẠI POKÉMON” 🔥🐲✨",
+    price: 130000,
+    description:
+      "📏 Kích thước: 8,5cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/CHARIZARD1/1.jpg",
+    gallery: [
+      "/images/products/CHARIZARD1/1.jpg",
+      "/images/products/CHARIZARD1/2.jpg",
+      "/images/products/CHARIZARD1/3.jpg",
+      "/images/products/CHARIZARD1/4.jpg",
+      "/images/products/CHARIZARD1/5.jpg",
+      "/images/products/CHARIZARD1/6.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 53,
+    slug: "CHIMCHAR",
+    name: "CHIMCHAR – KHỈ LỬA TINH NGHỊCH POKÉMON 🔥🐒",
+    price: 120000,
+    description:
+      "📏 Kích thước: 5cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/CHIMCHAR/1.jpg",
+    gallery: [
+      "/images/products/CHIMCHAR/1.jpg",
+      "/images/products/CHIMCHAR/2.jpg",
+      "/images/products/CHIMCHAR/3.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 54,
+    slug: "CROBAT",
+    name: "CROBAT – CHIẾN BINH DƠI BÓNG ĐÊM POKÉMON 🦇⚔️💜",
+    price: 95000,
+    description:
+      "📏 Kích thước: 8cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/CROBAT/1.jpg",
+    gallery: [
+      "/images/products/CROBAT/1.jpg",
+      "/images/products/CROBAT/2.jpg",
+      "/images/products/CROBAT/3.jpg",
+      "/images/products/CROBAT/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 55,
+    slug: "MUNCHLAX",
+    name: "MUNCHLAX – GẤU HAM ĂN POKÉMON 💤🍙💙",
+    price: 55000,
+    description:
+      "📏 Kích thước: 5cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/MUNCHLAX/1.jpg",
+    gallery: [
+      "/images/products/MUNCHLAX/1.jpg",
+      "/images/products/MUNCHLAX/2.jpg",
+      "/images/products/MUNCHLAX/3.jpg",
+      "/images/products/MUNCHLAX/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 56,
+    slug: "FERALIGATR",
+    name: "FERALIGATR – CHIẾN BINH CÁ SẤU NƯỚC POKÉMON 🌊⚔️🐊",
+    price: 155000,
+    description:
+      "📏 Kích thước: 9cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/FERALIGATR/1.jpg",
+    gallery: [
+      "/images/products/FERALIGATR/1.jpg",
+      "/images/products/FERALIGATR/2.jpg",
+      "/images/products/FERALIGATR/3.jpg",
+      "/images/products/FERALIGATR/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 57,
+    slug: "ARTICUNO",
+    name: "ARTICUNO – BĂNG ĐIỂU HUYỀN THOẠI POKÉMON ❄️🪽💙",
+    price: 130000,
+    description:
+      "📏 Kích thước: 11cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/ARTICUNO/1.jpg",
+    gallery: [
+      "/images/products/ARTICUNO/1.jpg",
+      "/images/products/ARTICUNO/2.jpg",
+      "/images/products/ARTICUNO/3.jpg",
+      "/images/products/ARTICUNO/4.jpg",
+      "/images/products/ARTICUNO/5.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 58,
+    slug: "PSYDUCK",
+    name: "PSYDUCK – VỊT VÀNG NGỐC NGHẾCH POKÉMON” 🐤💛😂",
+    price: 89000,
+    description:
+      "📏 Kích thước: 10cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/PSYDUCK/1.jpg",
+    gallery: [
+      "/images/products/PSYDUCK/1.jpg",
+      "/images/products/PSYDUCK/2.jpg",
+      "/images/products/PSYDUCK/3.jpg",
+      "/images/products/PSYDUCK/4.jpg",
+      "/images/products/PSYDUCK/5.jpg",
+      "/images/products/PSYDUCK/6.jpg",
+    ],
+    category: "Pokemon",
     rating: 5,
   },
 ];

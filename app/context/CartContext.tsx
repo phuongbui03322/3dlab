@@ -36,7 +36,9 @@ interface CartContextType {
   clearCart: () => void;
 }
 
-const CartContext = createContext<CartContextType | undefined>(undefined);
+const CartContext = createContext<CartContextType | undefined>(
+  undefined
+);
 
 export function CartProvider({
   children,
@@ -56,10 +58,31 @@ export function CartProvider({
       const data = localStorage.getItem("cart");
 
       if (data) {
-        setItems(JSON.parse(data));
+        const parsed = JSON.parse(data);
+
+        // Đảm bảo dữ liệu cũ không làm lỗi giỏ hàng
+        const validItems: CartItem[] = parsed
+          .filter(
+            (item: CartItem) =>
+              item &&
+              typeof item.id === "number" &&
+              typeof item.quantity === "number"
+          )
+          .map((item: CartItem) => ({
+            ...item,
+            price:
+              typeof item.price === "number"
+                ? item.price
+                : 0,
+          }));
+
+        setItems(validItems);
       }
     } catch (error) {
-      console.error("Không thể đọc giỏ hàng:", error);
+      console.error(
+        "Không thể đọc giỏ hàng:",
+        error
+      );
     }
   }, []);
 
@@ -69,7 +92,10 @@ export function CartProvider({
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    localStorage.setItem("cart", JSON.stringify(items));
+    localStorage.setItem(
+      "cart",
+      JSON.stringify(items)
+    );
   }, [items]);
 
   // ===========================
@@ -104,7 +130,9 @@ export function CartProvider({
           item.id === product.id
             ? {
                 ...item,
-                quantity: item.quantity + quantity,
+                quantity:
+                  item.quantity + quantity,
+                price: product.price,
               }
             : item
         );
@@ -118,6 +146,7 @@ export function CartProvider({
           name: product.name,
           image: product.image,
           category: product.category,
+          price: product.price,
           quantity,
         },
       ];
@@ -127,7 +156,7 @@ export function CartProvider({
       description: `${product.name} × ${quantity}`,
     });
 
-    // Nếu muốn tự mở giỏ hàng thì bỏ comment dòng dưới
+    // Nếu muốn tự mở giỏ hàng:
     // setIsCartOpen(true);
   };
 
@@ -136,7 +165,9 @@ export function CartProvider({
   // ===========================
   const removeFromCart = (id: number) => {
     setItems((prev) =>
-      prev.filter((item) => item.id !== id)
+      prev.filter(
+        (item) => item.id !== id
+      )
     );
   };
 
@@ -149,7 +180,8 @@ export function CartProvider({
         item.id === id
           ? {
               ...item,
-              quantity: item.quantity + 1,
+              quantity:
+                item.quantity + 1,
             }
           : item
       )
@@ -166,11 +198,14 @@ export function CartProvider({
           item.id === id
             ? {
                 ...item,
-                quantity: item.quantity - 1,
+                quantity:
+                  item.quantity - 1,
               }
             : item
         )
-        .filter((item) => item.quantity > 0)
+        .filter(
+          (item) => item.quantity > 0
+        )
     );
   };
 
@@ -186,7 +221,8 @@ export function CartProvider({
   // ===========================
   const totalItems = useMemo(() => {
     return items.reduce(
-      (total, item) => total + item.quantity,
+      (total, item) =>
+        total + item.quantity,
       0
     );
   }, [items]);
@@ -218,7 +254,9 @@ export function CartProvider({
 }
 
 export function useCartContext() {
-  const context = useContext(CartContext);
+  const context = useContext(
+    CartContext
+  );
 
   if (!context) {
     throw new Error(

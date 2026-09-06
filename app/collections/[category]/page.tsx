@@ -54,6 +54,11 @@ const banners: Record<
     description: "Những nhân vật hoạt hình được yêu thích.",
     image: "/images/banners/cartoon.png",
   },
+    pokemon: {
+    title: "Pokémon Collection",
+    description: "Những mô hình Pokémon được yêu thích nhất tại 3D LAB.",
+    image: "/images/banners/pokemon.png",
+  },
 };
 
 export default async function CollectionPage({

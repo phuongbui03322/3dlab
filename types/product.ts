@@ -4,7 +4,8 @@ export type ProductCategory =
   | "Dragon Ball"
   | "DC"
   | "Game"
-  | "Cartoon";
+  | "Cartoon"
+  | "Pokemon";
 
 export type ProductBadge =
   | "Best Seller"
@@ -41,6 +42,7 @@ export interface Product {
   // Giá
   // ========================
   price: number;
+  size?: string;
 
   originalPrice?: number;
 
