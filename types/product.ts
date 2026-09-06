@@ -5,7 +5,8 @@ export type ProductCategory =
   | "DC"
   | "Game"
   | "Cartoon"
-  | "Pokemon";
+  | "Pokemon"
+  | "Sonic";
 
 export type ProductBadge =
   | "Best Seller"

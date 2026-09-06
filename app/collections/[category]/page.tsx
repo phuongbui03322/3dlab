@@ -59,6 +59,12 @@ const banners: Record<
     description: "Những mô hình Pokémon được yêu thích nhất tại 3D LAB.",
     image: "/images/banners/pokemon.png",
   },
+  sonic: {
+  title: "Sonic Collection",
+  description:
+    "Những mô hình Sonic được yêu thích nhất tại 3D LAB.",
+  image: "/images/banners/sonic.png",
+},
 };
 
 export default async function CollectionPage({

@@ -167,6 +167,12 @@ export default function MobileMenu({
   count={categoryCount["Pokemon"] ?? 0}
   onClose={onClose}
 />
+<CategoryItem
+  title="Sonic (Bán chạy)"
+  href="/collections/sonic"
+  count={categoryCount["Sonic"] ?? 0}
+  onClose={onClose}
+/>
 
             <div className="my-2 border-t" />
 

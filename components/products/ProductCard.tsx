@@ -84,43 +84,43 @@ export default function ProductCard({
         </div>
 
         {/* Price / Quote */}
-        <div className="space-y-3">
-          {product.category === "Pokemon" ? (
-            <>
-              {/* Pokemon Price */}
-              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">
-                💰 {product.price.toLocaleString("vi-VN")}đ
-              </div>
+<div className="space-y-3">
+  {product.category === "Pokemon" || product.category === "Sonic" ? (
+    <>
+      {/* Pokemon + Sonic Price */}
+      <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">
+        💰 {product.price.toLocaleString("vi-VN")}đ
+      </div>
 
-              {/* Message Shop */}
-              <a
-                href="https://m.me/1151757441360383"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
-              >
-                💬 Nhắn tin cho shop
-              </a>
-            </>
-          ) : (
-            <>
-              {/* Other Categories */}
-              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700">
-                📏 Giá theo kích thước
-              </div>
+      {/* Message Shop */}
+      <a
+        href="https://m.me/1151757441360383"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+      >
+        💬 Nhắn tin cho shop
+      </a>
+    </>
+  ) : (
+    <>
+      {/* Other Categories */}
+      <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700">
+        📏 Giá theo kích thước
+      </div>
 
-              {/* Quote */}
-              <a
-                href="https://m.me/1151757441360383"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
-              >
-                💬 Liên hệ báo giá
-              </a>
-            </>
-          )}
-        </div>
+      {/* Quote */}
+      <a
+        href="https://m.me/1151757441360383"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+      >
+        💬 Liên hệ báo giá
+      </a>
+    </>
+  )}
+</div>
 
         {/* Sold + Stock */}
         <div className="flex items-center justify-between text-sm">

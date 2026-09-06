@@ -4,7 +4,7 @@ export const featuredProducts: Product[] = [
 
   {
     id: 1,
-    slug: "SONIVERINE",
+    slug: "SONIVERINE1",
     name: "⚔️ SONIVERINE – SONIC HÓA THÂN THÀNH WOLVERINE!",
     price: 0,
     image: "/images/products/x1.jpg",
@@ -322,8 +322,8 @@ export const featuredProducts: Product[] = [
   },
   {
     id: 20,
-    slug: "SUPERSONIC",
-    name: "SUPERSONIC – KHI SONIC TRỞ THÀNH SIÊU ANH HÙNG",
+    slug: "SUPERSONIC1",
+    name: "SUPERSONIC1 – KHI SONIC TRỞ THÀNH SIÊU ANH HÙNG",
     price: 0,
     image: "/images/products/mav.jpg",
     gallery: [
@@ -1046,6 +1046,425 @@ export const featuredProducts: Product[] = [
       "/images/products/PSYDUCK/6.jpg",
     ],
     category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 59,
+    slug: "DRAGONITE",
+    name: "DRAGONITE – RỒNG VÀNG DỄ THƯƠNG POKÉMON” 🐉💛✨",
+    price: 130000,
+    description:
+      "📏 Kích thước: 9,5cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/DRAGONITE/1.jpg",
+    gallery: [
+      "/images/products/DRAGONITE/1.jpg",
+      "/images/products/DRAGONITE/2.jpg",
+      "/images/products/DRAGONITE/3.jpg",
+      "/images/products/DRAGONITE/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 60,
+    slug: "BLASTOISE1",
+    name: "BLASTOISE1 – CHIẾN BINH PHÁO NƯỚC HUYỀN THOẠI POKÉMON” 💦💥🐢",
+    price: 115000,
+    description:
+      "📏 Kích thước: 6,5cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/BLASTOISE1/1.jpg",
+    gallery: [
+      "/images/products/BLASTOISE1/1.jpg",
+      "/images/products/BLASTOISE1/2.jpg",
+      "/images/products/BLASTOISE1/3.jpg",
+      "/images/products/BLASTOISE1/4.jpg",
+    ],
+    category: "Pokemon",
+    rating: 5,
+  },
+  {
+  
+    id: 61,
+    slug: "SHADOW",
+    name: "SHADOW (Cao 30cm) – HẮC NHÂN HUYỀN THOẠI SONIC” 🖤🔴⚡",
+    price: 350000,
+    description:
+      "📏 Kích thước: 30cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SHADOW/1.jpg",
+    gallery: [
+      "/images/products/SHADOW/1.jpg",
+      "/images/products/SHADOW/2.jpg",
+      "/images/products/SHADOW/3.jpg",
+      "/images/products/SHADOW/4.jpg",
+      "/images/products/SHADOW/5.jpg",
+      "/images/products/SHADOW/6.jpg",
+      "/images/products/SHADOW/7.jpg",
+    ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 62,
+    slug: "KNUCKLES",
+    name: "KNUCKLES (Cao 30cm) – CHIẾN BINH ĐỎ HUYỀN THOẠI SONIC 🔴🥊🔥",
+    price: 330000,
+    description:
+      "📏 Kích thước: 30cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/KNUCKLES/1.jpg",
+    gallery: [
+      "/images/products/KNUCKLES/1.jpg",
+      "/images/products/KNUCKLES/2.jpg",
+      "/images/products/KNUCKLES/3.jpg",
+      "/images/products/KNUCKLES/4.jpg",
+      "/images/products/KNUCKLES/5.jpg",
+      "/images/products/KNUCKLES/6.jpg",
+      "/images/products/KNUCKLES/7.jpg",
+      "/images/products/KNUCKLES/8.jpg",
+      "/images/products/KNUCKLES/9.jpg",
+    ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 63,
+    slug: "SONIC",
+    name: "SONIC (Cao 30cm) – NHÍM XANH SIÊU TỐC HUYỀN THOẠI SONIC” 💙⚡💨",
+    price: 320000,
+    description:
+      "📏 Kích thước: 30cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SONIC/1.jpg",
+    gallery: [
+      "/images/products/SONIC/1.jpg",
+      "/images/products/SONIC/2.jpg",
+      "/images/products/SONIC/3.jpg",
+      "/images/products/SONIC/4.jpg",
+      "/images/products/SONIC/5.jpg",
+      "/images/products/SONIC/6.jpg",
+      "/images/products/SONIC/7.jpg",
+      "/images/products/SONIC/8.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 64,
+    slug: "SONIC_GOKU",
+    name: "SONIC GOKU (Cao 30cm) – CHIẾN BINH SIÊU SAIYAN 💛⚡🔥",
+    price: 315000,
+    description:
+      "📏 Kích thước: 30cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SONIC_GOKU/1.jpg",
+    gallery: [
+      "/images/products/SONIC_GOKU/1.jpg",
+      "/images/products/SONIC_GOKU/2.jpg",
+      "/images/products/SONIC_GOKU/3.jpg",
+      "/images/products/SONIC_GOKU/4.jpg",
+      "/images/products/SONIC_GOKU/5.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 65,
+    slug: "SONIC_CAPTAIN",
+    name: "SONIC CAPTAIN AMERICA (Cao 27cm) – ĐỘI TRƯỞNG SIÊU TỐC SONIC 🇺🇸💙🛡️",
+    price: 320000,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SONIC_CAPTAIN/ct1.jpg",
+    gallery: [
+      "/images/products/SONIC_CAPTAIN/ct1.jpg",
+      "/images/products/SONIC_CAPTAIN/ct2.jpg",
+      "/images/products/SONIC_CAPTAIN/ct3.jpg",
+      "/images/products/SONIC_CAPTAIN/ct4.jpg",
+      "/images/products/SONIC_CAPTAIN/ct5.jpg",
+      "/images/products/SONIC_CAPTAIN/ct6.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 66,
+    slug: "WONDER_AMY",
+    name: "WONDER AMY (Cao 27cm) – NỮ CHIẾN BINH HỒNG HUYỀN THOẠI SONIC 💗⚔️✨",
+    price: 400000,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/WONDER_AMY/1.jpg",
+    gallery: [
+      "/images/products/WONDER_AMY/1.jpg",
+      "/images/products/WONDER_AMY/2.jpg",
+      "/images/products/WONDER_AMY/3.jpg",
+      "/images/products/WONDER_AMY/4.jpg",
+      "/images/products/WONDER_AMY/5.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 67,
+    slug: "PEED_KNUCKLES",
+    name: "SPEED KNUCKLES (Cao 27,5cm) – KNUCKLES SIÊU TỐC SONIC ⚡🥊🔥",
+    price: 275000,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/PEED_KNUCKLES/1.jpg",
+    gallery: [
+      "/images/products/PEED_KNUCKLES/1.jpg",
+      "/images/products/PEED_KNUCKLES/2.jpg",
+      "/images/products/PEED_KNUCKLES/3.jpg",
+      "/images/products/PEED_KNUCKLES/4.jpg",
+      "/images/products/PEED_KNUCKLES/5.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 68,
+    slug: "SUPERSONIC",
+    name: "SUPERSONIC (Cao 28cm) – SONIC SIÊU NHÂN HUYỀN THOẠI ⚡💙🔥",
+    price: 275000,
+    description:
+      "📏 Kích thước: 28cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SUPERSONIC/1.jpg",
+    gallery: [
+      "/images/products/SUPERSONIC/1.jpg",
+      "/images/products/SUPERSONIC/2.jpg",
+      "/images/products/SUPERSONIC/3.jpg",
+      "/images/products/SUPERSONIC/4.jpg",
+      "/images/products/SUPERSONIC/5.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 69,
+    slug: "EMERALD_SILVER",
+    name: "EMERALD_SILVER (Cao 31cm) – SILVER CHIẾN BINH LỤC BẢO 💚🩶✨",
+    price: 275000,
+    description:
+      "📏 Kích thước: 31cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/EMERALD_SILVER/1.jpg",
+    gallery: [
+      "/images/products/EMERALD_SILVER/1.jpg",
+      "/images/products/EMERALD_SILVER/2.jpg",
+      "/images/products/EMERALD_SILVER/3.jpg",
+      "/images/products/EMERALD_SILVER/4.jpg",
+      "/images/products/EMERALD_SILVER/5.jpg",
+      "/images/products/EMERALD_SILVER/6.jpg",
+      "/images/products/EMERALD_SILVER/7.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 70,
+    slug: "CYBORG_TAILS",
+    name: "CYBORG TAILS (Cao 29cm) – TAILS CÔNG NGHỆ CHIẾN BINH SONIC 🦊⚙️🔥",
+    price: 420000,
+    description:
+      "📏 Kích thước: 29cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/CYBORG_TAILS/1.jpg",
+    gallery: [
+      "/images/products/CYBORG_TAILS/1.jpg",
+      "/images/products/CYBORG_TAILS/2.jpg",
+      "/images/products/CYBORG_TAILS/3.jpg",
+      "/images/products/CYBORG_TAILS/4.jpg",
+      "/images/products/CYBORG_TAILS/5.jpg",
+      "/images/products/CYBORG_TAILS/6.jpg",
+      "/images/products/CYBORG_TAILS/7.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 71,
+    slug: "BAT_SHADOW",
+    name: "BAT SHADOW (Cao 27,7cm) – SHADOW HIỆP SĨ BÓNG ĐÊM 🖤🦇🔥",
+    price: 340000,
+    description:
+      "📏 Kích thước: 27,7cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/BAT_SHADOW/1.jpg",
+    gallery: [
+      "/images/products/BAT_SHADOW/1.jpg",
+      "/images/products/BAT_SHADOW/2.jpg",
+      "/images/products/BAT_SHADOW/3.jpg",
+      "/images/products/BAT_SHADOW/4.jpg",
+      "/images/products/BAT_SHADOW/5.jpg",
+      "/images/products/BAT_SHADOW/6.jpg",
+      "/images/products/BAT_SHADOW/7.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 72,
+    slug: "SUPER_KNUCKLES",
+    name: "SUPER KNUCKLES (Cao 27,7cm) – CHIẾN BINH ĐỎ SIÊU SỨC MẠNH SONIC 🔴💪⚡",
+    price: 340000,
+    description:
+      "📏 Kích thước: 27,7cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SUPER_KNUCKLES/1.jpg",
+    gallery: [
+      "/images/products/SUPER_KNUCKLES/1.jpg",
+      "/images/products/SUPER_KNUCKLES/2.jpg",
+      "/images/products/SUPER_KNUCKLES/3.jpg",
+      "/images/products/SUPER_KNUCKLES/4.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 73,
+    slug: "SPEED_FORCE_SONIC",
+    name: "SPEED FORCE SONIC (Cao 27,5cm) – CHIẾN BINH TỐC ĐỘ SONIC ⚡💨🔴",
+    price: 245000,
+    description:
+      "📏 Kích thước: 27,5cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SPEED_FORCE_SONIC/1.jpg",
+    gallery: [
+      "/images/products/SPEED_FORCE_SONIC/1.jpg",
+      "/images/products/SPEED_FORCE_SONIC/2.jpg",
+      "/images/products/SPEED_FORCE_SONIC/3.jpg",
+      "/images/products/SPEED_FORCE_SONIC/4.jpg",
+      "/images/products/SPEED_FORCE_SONIC/5.jpg",
+      "/images/products/SPEED_FORCE_SONIC/6.jpg",
+      "/images/products/SPEED_FORCE_SONIC/7.jpg",
+      "/images/products/SPEED_FORCE_SONIC/8.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 74,
+    slug: "CAPTAIN_AMY",
+    name: "CAPTAIN AMY (Cao 26cm) – NỮ CHIẾN BINH VŨ TRỤ ⭐💗🔴",
+    price: 265000,
+    description:
+      "📏 Kích thước: 26cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/CAPTAIN_AMY/1.jpg",
+    gallery: [
+      "/images/products/CAPTAIN_AMY/1.jpg",
+      "/images/products/CAPTAIN_AMY/2.jpg",
+      "/images/products/CAPTAIN_AMY/3.jpg",
+      "/images/products/CAPTAIN_AMY/4.jpg",
+      "/images/products/CAPTAIN_AMY/5.jpg",
+      "/images/products/CAPTAIN_AMY/6.jpg",
+      "/images/products/CAPTAIN_AMY/7.jpg",
+      "/images/products/CAPTAIN_AMY/8.jpg",
+      "/images/products/CAPTAIN_AMY/8.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 75,
+    slug: "IRON_TAILS",
+    name: "IRON TAILS (Cao 27cm) – TAILS × IRON MAN",
+    price: 330000,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/IRON_TAILS/1.jpg",
+    gallery: [
+      "/images/products/IRON_TAILS/1.jpg",
+      "/images/products/IRON_TAILS/2.jpg",
+      "/images/products/IRON_TAILS/3.jpg",
+      "/images/products/IRON_TAILS/4.jpg",
+      "/images/products/IRON_TAILS/5.jpg",
+      "/images/products/IRON_TAILS/6.jpg",
+      "/images/products/IRON_TAILS/7.jpg",
+      "/images/products/IRON_TAILS/8.jpg",
+      "/images/products/IRON_TAILS/9.jpg",
+      "/images/products/IRON_TAILS/10.jpg",
+   
+      
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 76,
+    slug: "SHADOW_VENOM",
+    name: "SHADOW VENOM (Cao 27cm) – SHADOW × VENOM.",
+    price: 325000,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SHADOW_VENOM/1.jpg",
+    gallery: [
+      "/images/products/SHADOW_VENOM/1.jpg",
+      "/images/products/SHADOW_VENOM/2.jpg",
+      "/images/products/SHADOW_VENOM/3.jpg",
+      "/images/products/SHADOW_VENOM/4.jpg",
+      "/images/products/SHADOW_VENOM/5.jpg",
+      "/images/products/SHADOW_VENOM/6.jpg",
+      "/images/products/SHADOW_VENOM/7.jpg",
+      "/images/products/SHADOW_VENOM/8.jpg",
+      "/images/products/SHADOW_VENOM/9.jpg",
+      "/images/products/SHADOW_VENOM/10.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 77,
+    slug: "Knuckpool",
+    name: "Knuckpool (Cao 26cm) - KNUCKLES × DEADPOOL",
+    price: 310000,
+    description:
+      "📏 Kích thước: 26cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/Knuckpool/1.jpg",
+    gallery: [
+      "/images/products/Knuckpool/1.jpg",
+      "/images/products/Knuckpool/2.jpg",
+      "/images/products/Knuckpool/3.jpg",
+      "/images/products/Knuckpool/4.jpg",
+      "/images/products/Knuckpool/5.jpg",
+      "/images/products/Knuckpool/6.jpg",
+      "/images/products/Knuckpool/7.jpg",
+      "/images/products/Knuckpool/8.jpg",
+      "/images/products/Knuckpool/9.jpg",
+      ],
+    category: "Sonic",
+    rating: 5,
+  },
+  {
+  
+    id: 78,
+    slug: "SONIVERINE",
+    name: "SONIVERINE (Cao 28cm) – SONIC × WOLVERINE",
+    price: 300000,
+    description:
+      "📏 Kích thước: 28cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    image: "/images/products/SONIVERINE/x1.jpg",
+    gallery: [
+      "/images/products/SONIVERINE/x1.jpg",
+      "/images/products/SONIVERINE/x2.jpg",
+      "/images/products/SONIVERINE/x3.jpg",
+      "/images/products/SONIVERINE/x4.jpg",
+      "/images/products/SONIVERINE/x5.jpg",
+      "/images/products/SONIVERINE/x6.jpg",
+      "/images/products/SONIVERINE/x7.jpg",
+      "/images/products/SONIVERINE/x8.jpg",
+      ],
+    category: "Sonic",
     rating: 5,
   },
 ];
