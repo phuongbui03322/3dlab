@@ -6,6 +6,8 @@ export type ProductCategory =
   | "Game"
   | "Cartoon"
   | "Pokemon"
+  | "Móc khóa"
+  | "Mô hình Mini"
   | "Sonic";
 
 export type ProductBadge =

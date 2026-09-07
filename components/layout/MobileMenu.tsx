@@ -173,6 +173,18 @@ export default function MobileMenu({
   count={categoryCount["Sonic"] ?? 0}
   onClose={onClose}
 />
+<CategoryItem
+  title="Móc khóa"
+  href="/collections/moc-khoa"
+  count={categoryCount["Móc khóa"] ?? 0}
+  onClose={onClose}
+/>
+<CategoryItem
+  title="Mô hình Mini"
+  href="/collections/mo-hinh-mini"
+  count={categoryCount["Mô hình Mini"] ?? 0}
+  onClose={onClose}
+/>
 
             <div className="my-2 border-t" />
 

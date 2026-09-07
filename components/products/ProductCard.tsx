@@ -29,11 +29,20 @@ export default function ProductCard({
         )
       : null;
 
+  // Các danh mục hiển thị giá trực tiếp
+  const hasFixedPrice =
+    product.category === "Pokemon" ||
+    product.category === "Sonic" ||
+    product.category === "Móc khóa" ||
+    product.category === "Mô hình Mini";
+
   return (
     <div className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
       {/* Image */}
       <Link href={`/product/${product.slug}`}>
         <div className="relative aspect-square cursor-pointer overflow-hidden bg-slate-100">
+
           <ProductBadge badge={product.badge} />
 
           {discount && (
@@ -48,11 +57,13 @@ export default function ProductCard({
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
+
         </div>
       </Link>
 
       {/* Content */}
       <div className="space-y-4 p-5">
+
         {/* Category */}
         <p className="text-sm font-semibold text-blue-600">
           {product.category}
@@ -84,46 +95,52 @@ export default function ProductCard({
         </div>
 
         {/* Price / Quote */}
-<div className="space-y-3">
-  {product.category === "Pokemon" || product.category === "Sonic" ? (
-    <>
-      {/* Pokemon + Sonic Price */}
-      <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">
-        💰 {product.price.toLocaleString("vi-VN")}đ
-      </div>
+        <div className="space-y-3">
 
-      {/* Message Shop */}
-      <a
-        href="https://m.me/1151757441360383"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
-      >
-        💬 Nhắn tin cho shop
-      </a>
-    </>
-  ) : (
-    <>
-      {/* Other Categories */}
-      <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700">
-        📏 Giá theo kích thước
-      </div>
+          {hasFixedPrice ? (
+            <>
+              {/* Giá */}
+              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">
+                💰{" "}
+                {product.price > 0
+                  ? `${product.price.toLocaleString("vi-VN")}đ`
+                  : "Liên hệ báo giá"}
+              </div>
 
-      {/* Quote */}
-      <a
-        href="https://m.me/1151757441360383"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
-      >
-        💬 Liên hệ báo giá
-      </a>
-    </>
-  )}
-</div>
+              {/* Liên hệ Shop */}
+              <a
+                href="https://m.me/1151757441360383"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+              >
+                💬 Liên hệ Shop
+              </a>
+            </>
+          ) : (
+            <>
+              {/* Sản phẩm cần chọn kích thước */}
+              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700">
+                📏 Giá theo kích thước
+              </div>
+
+              {/* Báo giá */}
+              <a
+                href="https://m.me/1151757441360383"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+              >
+                💬 Liên hệ báo giá
+              </a>
+            </>
+          )}
+
+        </div>
 
         {/* Sold + Stock */}
         <div className="flex items-center justify-between text-sm">
+
           {product.sold ? (
             <span className="text-slate-500">
               Đã bán {product.sold}
@@ -137,10 +154,13 @@ export default function ProductCard({
               Còn {product.stock}
             </span>
           )}
+
         </div>
 
         {/* Footer */}
         <div className="space-y-3 border-t border-slate-100 pt-4">
+
+          {/* Thêm vào giỏ */}
           <button
             onClick={() => addToCart(product)}
             className="flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 py-3 font-semibold text-white transition hover:bg-black"
@@ -149,6 +169,7 @@ export default function ProductCard({
             Thêm vào giỏ
           </button>
 
+          {/* Xem chi tiết */}
           <Link
             href={`/product/${product.slug}`}
             className="flex items-center justify-between rounded-xl border px-4 py-3 transition hover:border-blue-600 hover:text-blue-600"
@@ -159,7 +180,9 @@ export default function ProductCard({
 
             <Eye size={18} />
           </Link>
+
         </div>
+
       </div>
     </div>
   );

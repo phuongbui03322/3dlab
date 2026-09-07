@@ -1,58 +1,30 @@
 "use client";
 
-import { useState } from "react";
-import {
-  ChevronDown,
-  ChevronUp,
-  Loader2,
-} from "lucide-react";
+import { useEffect, useState } from "react";
 
 import ProductCard from "@/components/products/ProductCard";
 import { featuredProducts } from "@/data/featuredProducts";
 
-const PRODUCTS_PER_LOAD = 4;
-
 export default function FeaturedProducts() {
-  const [visibleCount, setVisibleCount] =
-    useState(PRODUCTS_PER_LOAD);
+  const [displayedProducts, setDisplayedProducts] =
+    useState<typeof featuredProducts>([]);
 
-  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    // Chỉ lấy sản phẩm Pokémon + Sonic
+    const products = featuredProducts.filter(
+      (product) =>
+        product.category === "Pokemon" ||
+        product.category === "Sonic"
+    );
 
-  const displayedProducts = featuredProducts.slice(
-    0,
-    visibleCount
-  );
+    // Random sản phẩm
+    const shuffled = [...products].sort(
+      () => Math.random() - 0.5
+    );
 
-  const hasMore =
-    visibleCount < featuredProducts.length;
-
-  const handleClick = () => {
-    if (loading) return;
-
-    setLoading(true);
-
-    setTimeout(() => {
-      if (hasMore) {
-        setVisibleCount((prev) =>
-          Math.min(
-            prev + PRODUCTS_PER_LOAD,
-            featuredProducts.length
-          )
-        );
-      } else {
-        setVisibleCount(PRODUCTS_PER_LOAD);
-
-        document
-          .getElementById("featured-products")
-          ?.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-      }
-
-      setLoading(false);
-    }, 250);
-  };
+    // Chỉ lấy 6 sản phẩm
+    setDisplayedProducts(shuffled.slice(0, 6));
+  }, []);
 
   return (
     <section
@@ -60,6 +32,7 @@ export default function FeaturedProducts() {
       className="pt-6 pb-14 scroll-mt-32"
     >
       <div className="mx-auto max-w-7xl px-4">
+
         {/* Heading */}
         <div className="mb-10 text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-red-500">
@@ -91,37 +64,6 @@ export default function FeaturedProducts() {
           ))}
         </div>
 
-        {/* Button */}
-        {featuredProducts.length >
-          PRODUCTS_PER_LOAD && (
-          <div className="mt-10 flex justify-center">
-            <button
-              onClick={handleClick}
-              disabled={loading}
-              className="inline-flex h-12 items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 font-semibold text-slate-700 transition-all duration-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white disabled:cursor-not-allowed disabled:opacity-70"
-            >
-              {loading ? (
-                <>
-                  <Loader2
-                    size={18}
-                    className="animate-spin"
-                  />
-                  Đang tải...
-                </>
-              ) : hasMore ? (
-                <>
-                  Xem thêm sản phẩm
-                  <ChevronDown size={18} />
-                </>
-              ) : (
-                <>
-                  Thu gọn
-                  <ChevronUp size={18} />
-                </>
-              )}
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );
