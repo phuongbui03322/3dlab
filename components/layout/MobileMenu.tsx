@@ -120,65 +120,12 @@ export default function MobileMenu({
             <div className="my-2 border-t" />
 
             <CategoryItem
-  title="Anime"
-  href="/collections/anime"
-  count={categoryCount["Anime"] ?? 0}
-  onClose={onClose}
-/>
-
-            <CategoryItem
-              title="Marvel"
-              href="/collections/marvel"
-              count={categoryCount["Marvel"] ?? 0}
-              onClose={onClose}
-            />
-
-            <CategoryItem
-              title="DC"
-              href="/collections/dc"
-              count={categoryCount["DC"] ?? 0}
-              onClose={onClose}
-            />
-
-            <CategoryItem
-              title="Dragon Ball"
-              href="/collections/dragon-ball"
-              count={categoryCount["Dragon Ball"] ?? 0}
-              onClose={onClose}
-            />
-
-            <CategoryItem
-  title="Cartoon"
-  href="/collections/cartoon"
-  count={categoryCount["Cartoon"] ?? 0}
-  onClose={onClose}
-/>
-
-
-            <CategoryItem
-              title="Game"
-              href="/collections/game"
-              count={categoryCount["Game"] ?? 0}
-              onClose={onClose}
-            />
-            <CategoryItem
-  title="Pokemon"
-  href="/collections/pokemon"
-  count={categoryCount["Pokemon"] ?? 0}
-  onClose={onClose}
-/>
-<CategoryItem
   title="Sonic (Bán chạy)"
   href="/collections/sonic"
   count={categoryCount["Sonic"] ?? 0}
   onClose={onClose}
 />
-<CategoryItem
-  title="Móc khóa"
-  href="/collections/moc-khoa"
-  count={categoryCount["Móc khóa"] ?? 0}
-  onClose={onClose}
-/>
+
 <CategoryItem
   title="Mô hình Mini"
   href="/collections/mo-hinh-mini"
@@ -186,14 +133,61 @@ export default function MobileMenu({
   onClose={onClose}
 />
 
-            <div className="my-2 border-t" />
+<CategoryItem
+  title="Móc khóa"
+  href="/collections/moc-khoa"
+  count={categoryCount["Móc khóa"] ?? 0}
+  onClose={onClose}
+/>
 
-            <MenuItem
-              icon={<Heart size={18} />}
-              title="Sản phẩm nổi bật"
-              href="/#featured-products"
-              onClose={onClose}
-            />
+<CategoryItem
+  title="Pokemon"
+  href="/collections/pokemon"
+  count={categoryCount["Pokemon"] ?? 0}
+  onClose={onClose}
+/>
+
+<CategoryItem
+  title="Anime"
+  href="/collections/anime"
+  count={categoryCount["Anime"] ?? 0}
+  onClose={onClose}
+/>
+
+<CategoryItem
+  title="Marvel"
+  href="/collections/marvel"
+  count={categoryCount["Marvel"] ?? 0}
+  onClose={onClose}
+/>
+
+<CategoryItem
+  title="DC"
+  href="/collections/dc"
+  count={categoryCount["DC"] ?? 0}
+  onClose={onClose}
+/>
+
+<CategoryItem
+  title="Dragon Ball"
+  href="/collections/dragon-ball"
+  count={categoryCount["Dragon Ball"] ?? 0}
+  onClose={onClose}
+/>
+
+<CategoryItem
+  title="Cartoon"
+  href="/collections/cartoon"
+  count={categoryCount["Cartoon"] ?? 0}
+  onClose={onClose}
+/>
+
+<CategoryItem
+  title="Game"
+  href="/collections/game"
+  count={categoryCount["Game"] ?? 0}
+  onClose={onClose}
+/>
 
             <button
   onClick={() => {
