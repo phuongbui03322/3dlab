@@ -33,6 +33,7 @@ export default function ProductCard({
   const hasFixedPrice =
     product.category === "Pokemon" ||
     product.category === "Sonic" ||
+    product.category === "Dragon Ball" ||
     product.category === "Móc khóa" ||
     product.category === "Mô hình Mini";
 

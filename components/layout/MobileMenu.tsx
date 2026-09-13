@@ -37,7 +37,14 @@ export default function MobileMenu({
   const categoryCount = useMemo(() => {
   return featuredProducts.reduce<Record<string, number>>(
     (acc, product) => {
-      acc[product.category] = (acc[product.category] || 0) + 1;
+      const categories = Array.isArray(product.category)
+        ? product.category
+        : [product.category];
+
+      categories.forEach((category) => {
+        acc[category] = (acc[category] || 0) + 1;
+      });
+
       return acc;
     },
     {}
@@ -125,6 +132,12 @@ export default function MobileMenu({
   count={categoryCount["Sonic"] ?? 0}
   onClose={onClose}
 />
+<CategoryItem
+  title="Dragon Ball"
+  href="/collections/dragon-ball"
+  count={categoryCount["Dragon Ball"] ?? 0}
+  onClose={onClose}
+/>
 
 <CategoryItem
   title="Mô hình Mini"
@@ -165,13 +178,6 @@ export default function MobileMenu({
   title="DC"
   href="/collections/dc"
   count={categoryCount["DC"] ?? 0}
-  onClose={onClose}
-/>
-
-<CategoryItem
-  title="Dragon Ball"
-  href="/collections/dragon-ball"
-  count={categoryCount["Dragon Ball"] ?? 0}
   onClose={onClose}
 />
 

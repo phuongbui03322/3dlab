@@ -27,12 +27,36 @@ export default async function ProductPage({
     notFound();
   }
 
+  // Danh mục chính của sản phẩm
+  const primaryCategory = Array.isArray(product.category)
+    ? product.category[0]
+    : product.category;
+
+  const categorySlug = primaryCategory
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/\s+/g, "-");
+
+  // Sản phẩm liên quan:
+  // chỉ cần có ít nhất 1 danh mục trùng với sản phẩm hiện tại
+  const productCategories = Array.isArray(product.category)
+    ? product.category
+    : [product.category];
+
   const relatedProducts = featuredProducts
-    .filter(
-      (item) =>
-        item.category === product.category &&
-        item.id !== product.id
-    )
+    .filter((item) => {
+      if (item.id === product.id) return false;
+
+      const itemCategories = Array.isArray(item.category)
+        ? item.category
+        : [item.category];
+
+      return itemCategories.some((category) =>
+        productCategories.includes(category)
+      );
+    })
     .slice(0, 4);
 
   return (
@@ -45,8 +69,8 @@ export default async function ProductPage({
             href: "/",
           },
           {
-            label: product.category,
-            href: `/collections/${product.category.toLowerCase()}`,
+            label: primaryCategory,
+            href: `/collections/${categorySlug}`,
           },
           {
             label: product.name,

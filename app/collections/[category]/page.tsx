@@ -100,7 +100,12 @@ export default async function CollectionPage({
   }
 
   const products = featuredProducts.filter((item) => {
-    const slug = item.category
+  const categories = Array.isArray(item.category)
+    ? item.category
+    : [item.category];
+
+  return categories.some((cat) => {
+    const slug = cat
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
@@ -109,6 +114,7 @@ export default async function CollectionPage({
 
     return slug === category;
   });
+});
 
   return (
     <>

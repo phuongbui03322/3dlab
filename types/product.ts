@@ -26,7 +26,7 @@ export interface Product {
 
   name: string;
 
-  category: ProductCategory;
+  category: ProductCategory | ProductCategory[];
 
   description?: string;
 
