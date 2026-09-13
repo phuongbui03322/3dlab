@@ -5,7 +5,7 @@ export interface CartItem {
   slug: string;
   name: string;
   image: string;
-  category: ProductCategory;
-   price: number;
+  category: ProductCategory | ProductCategory[];
+  price: number;
   quantity: number;
 }
