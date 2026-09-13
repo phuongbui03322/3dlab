@@ -80,7 +80,14 @@ export default function ProductTabs({
         <div className="overflow-hidden rounded-2xl border border-slate-200">
           <table className="w-full text-sm">
             <tbody>
-              <Row title="Danh mục" value={product.category} />
+              <Row
+  title="Danh mục"
+  value={
+    Array.isArray(product.category)
+      ? product.category.join(", ")
+      : product.category
+  }
+/>
 
               <Row
                 title="Chất liệu"
