@@ -18,6 +18,13 @@ const banners: Record<
     image: string;
   }
 > = {
+  all: {
+    title: "Tất Cả Sản Phẩm",
+    description:
+      "Khám phá toàn bộ mô hình và sản phẩm 3D tại 3D LAB.",
+    image: "/images/banners/pokemon.png",
+  },
+
   marvel: {
     title: "Marvel Collection",
     description:
@@ -80,12 +87,13 @@ const banners: Record<
       "Bộ sưu tập móc khóa 3D độc đáo, nhỏ gọn và phù hợp làm quà tặng hoặc phụ kiện cá nhân.",
     image: "/images/banners/moc-khoa.png",
   },
+
   "mo-hinh-mini": {
-  title: "Mô Hình Mini",
-  description:
-    "Những mô hình 3D mini nhỏ xinh, đáng yêu và phù hợp để trang trí bàn làm việc, taplo xe hoặc làm quà tặng.",
-  image: "/images/banners/mo-hinh-mini.png",
-},
+    title: "Mô Hình Mini",
+    description:
+      "Những mô hình 3D mini nhỏ xinh, đáng yêu và phù hợp để trang trí bàn làm việc, taplo xe hoặc làm quà tặng.",
+    image: "/images/banners/mo-hinh-mini.png",
+  },
 };
 
 export default async function CollectionPage({
@@ -99,22 +107,40 @@ export default async function CollectionPage({
     notFound();
   }
 
-  const products = featuredProducts.filter((item) => {
-  const categories = Array.isArray(item.category)
-    ? item.category
-    : [item.category];
+  /**
+   * Tất cả sản phẩm
+   */
+  let products;
 
-  return categories.some((cat) => {
-    const slug = cat
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/đ/g, "d")
-      .replace(/\s+/g, "-");
+  if (category === "all") {
+    products = featuredProducts;
+  } else {
+    /**
+     * Lọc sản phẩm theo danh mục
+     *
+     * Hỗ trợ cả:
+     * category: "Sonic"
+     *
+     * và:
+     * category: ["Sonic", "Dragon Ball"]
+     */
+    products = featuredProducts.filter((item) => {
+      const categories = Array.isArray(item.category)
+        ? item.category
+        : [item.category];
 
-    return slug === category;
-  });
-});
+      return categories.some((cat) => {
+        const slug = cat
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/đ/g, "d")
+          .replace(/\s+/g, "-");
+
+        return slug === category;
+      });
+    });
+  }
 
   return (
     <>

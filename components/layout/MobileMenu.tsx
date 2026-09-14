@@ -12,6 +12,7 @@ import {
   Info,
   Wand2,
   ChevronRight,
+  Grid3X3,
 } from "lucide-react";
 import {
   useEffect,
@@ -126,6 +127,48 @@ export default function MobileMenu({
 
             <div className="my-2 border-t" />
 
+            <Link
+  href="/collections/all"
+  onClick={onClose}
+  className="
+    mb-2
+    flex
+    w-full
+    items-center
+    justify-between
+    rounded-xl
+    bg-blue-50
+    px-3
+    py-3
+    text-[15px]
+    font-semibold
+    text-blue-700
+    ring-1
+    ring-blue-100
+    transition-all
+    duration-200
+    hover:bg-blue-100
+    hover:text-blue-700
+  "
+>
+  <div className="flex items-center gap-3">
+    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white">
+      <Grid3X3 size={16} />
+    </span>
+
+    <span>Tất cả sản phẩm</span>
+
+    <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-bold text-blue-700">
+      {featuredProducts.length}
+    </span>
+  </div>
+
+  <ChevronRight
+    size={17}
+    className="text-blue-600"
+  />
+</Link>
+
             <CategoryItem
   title="Sonic (Bán chạy)"
   href="/collections/sonic"
@@ -161,7 +204,7 @@ export default function MobileMenu({
 />
 
 <CategoryItem
-  title="Anime"
+  title="Anime (One Piece)"
   href="/collections/anime"
   count={categoryCount["Anime"] ?? 0}
   onClose={onClose}
