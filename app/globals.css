@@ -307,3 +307,25 @@ main {
 .animate-fade-up {
   animation: fade-up 0.45s ease forwards;
 }
+/* ===========================
+   Anime - hiệu ứng nhấp nháy
+=========================== */
+
+@keyframes animeGlow {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow:
+      0 0 2px rgba(239, 68, 68, 0.3),
+      0 0 5px rgba(239, 68, 68, 0.2);
+  }
+
+  50% {
+    opacity: 0.55;
+    transform: scale(1.08);
+    text-shadow:
+      0 0 5px rgba(239, 68, 68, 0.8),
+      0 0 12px rgba(239, 68, 68, 0.5);
+  }
+}

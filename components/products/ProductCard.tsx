@@ -30,18 +30,13 @@ export default function ProductCard({
       : null;
 
   // Chuyển category thành mảng để xử lý
-  // cả sản phẩm 1 danh mục và nhiều danh mục
-  const categories = Array.isArray(product.category)
-    ? product.category
-    : [product.category];
+// cả sản phẩm 1 danh mục và nhiều danh mục
+const categories = Array.isArray(product.category)
+  ? product.category
+  : [product.category];
 
-  // Các danh mục hiển thị giá trực tiếp
-  const hasFixedPrice =
-    categories.includes("Pokemon") ||
-    categories.includes("Sonic") ||
-    categories.includes("Dragon Ball") ||
-    categories.includes("Móc khóa") ||
-    categories.includes("Mô hình Mini");
+// Tất cả sản phẩm đều hiển thị giá trực tiếp
+const hasFixedPrice = true;
 
   return (
     <div className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">

@@ -32,12 +32,12 @@ const banners: Record<
     image: "/images/banners/marvel1.png",
   },
 
-  anime: {
-    title: "Anime Collection",
-    description:
-      "Naruto, One Piece và nhiều nhân vật Anime nổi tiếng.",
-    image: "/images/banners/anime.png",
-  },
+  "one-piece": {
+  title: "One Piece Collection",
+  description:
+    "Những mô hình nhân vật One Piece được yêu thích tại 3D LAB.",
+  image: "/images/banners/anime.png",
+},
 
   "dragon-ball": {
     title: "Dragon Ball Collection",

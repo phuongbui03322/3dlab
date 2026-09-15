@@ -1,5 +1,5 @@
 export type ProductCategory =
-  | "Anime"
+  | "One Piece"
   | "Marvel"
   | "Dragon Ball"
   | "DC"
@@ -27,6 +27,8 @@ export interface Product {
   name: string;
 
   category: ProductCategory | ProductCategory[];
+
+  character?: string;
 
   description?: string;
 

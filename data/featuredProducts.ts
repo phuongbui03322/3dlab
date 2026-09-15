@@ -58,8 +58,10 @@ export const featuredProducts: Product[] = [
   {
     id: 4,
     slug: "ZORO",
-    name: "ZORO URBAN VIBES – CHẤT ĐƯỜNG PHỐ, CHUẨN KIẾM SĨ! ",
-    price: 0,
+    name: "ZORO URBAN VIBES (Cao 32,5cm) – CHẤT ĐƯỜNG PHỐ, CHUẨN KIẾM SĨ! ",
+    price: 350000,
+    description:
+      "📏 Kích thước: 32,5cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
     image: "/images/products/z1.png",
     gallery: [
     "/images/products/z1.png",
@@ -70,7 +72,7 @@ export const featuredProducts: Product[] = [
     "/images/products/z6.png",
     "/images/products/z7.png",
     ],
-    category: "Anime",
+    category: "One Piece",
     rating: 5,
   },
   {
@@ -110,15 +112,17 @@ export const featuredProducts: Product[] = [
   {
     id: 7,
     slug: "LUFFY-MONKEY",
-    name: "🏴‍☠️ MONKEY D. LUFFY – THUYỀN TRƯỞNG MŨ RƠM HUYỀN THOẠI! 👒",
-    price: 0,
+    name: "🏴‍☠️ MONKEY D. LUFFY (Cao 27cm) – THUYỀN TRƯỞNG MŨ RƠM HUYỀN THOẠI! 👒",
+    price: 189000,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
     image: "/images/products/l2.png",
     gallery: [
     "/images/products/l2.png",
     "/images/products/l4.png",
     "/images/products/l5.png",
   ],
-    category: "Anime",
+    category: "One Piece",
     badge: "Hot",
     rating: 5,
   },
@@ -367,8 +371,10 @@ export const featuredProducts: Product[] = [
   {
     id: 22,
     slug: "LUFFY-URBAN-VIBES",
-    name: "LUFFY URBAN VIBES – THUYỀN TRƯỞNG MŨ RƠM PHONG CÁCH STREETWEAR!",
+    name: "LUFFY URBAN VIBES (Cao 30cm) – THUYỀN TRƯỞNG MŨ RƠM PHONG CÁCH STREETWEAR!",
     price: 0,
+    description:
+      "📏 Kích thước: 27cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
     image: "/images/products/ư1.jpg",
     gallery: [
     "/images/products/ư1.jpg",
@@ -379,7 +385,7 @@ export const featuredProducts: Product[] = [
     "/images/products/ư6.jpg",
     "/images/products/ư7.jpg",
   ],
-    category: "Anime",
+    category: "One Piece",
     rating: 5,
   },
   {
@@ -432,7 +438,7 @@ export const featuredProducts: Product[] = [
     "/images/products/6q.jpg",
     "/images/products/7q.jpg",
   ],
-    category: "Anime",
+    category: "One Piece",
     rating: 5,
   },
   {
@@ -521,7 +527,7 @@ export const featuredProducts: Product[] = [
   ],
     video: "/images/products/qr.mp4",
     videoThumbnail: "/images/products/qr.jpg",
-    category: "Anime",
+    category: "One Piece",
     rating: 5,
   },
   {
@@ -2738,6 +2744,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Dragon/6.jpg",
   ],
     category: "Dragon Ball",
+    character: "Piccolo",
     rating: 5,
   },
   {
@@ -2758,6 +2765,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Trunks/7.jpg",
   ],
     category: "Dragon Ball",
+    character: "Trunks",
     rating: 5,
   },
   {
@@ -2778,6 +2786,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Beerus/7.jpg",
   ],
     category: "Dragon Ball",
+    character: "Beerus",
     rating: 5,
   },
   {
@@ -2797,6 +2806,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Broly/6.jpg",
     ],
     category: "Dragon Ball",
+    character: "Broly",
     rating: 5,
   },
   {
@@ -2817,6 +2827,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Vegito/7.jpg",
     ],
     category: "Dragon Ball",
+    character: "Vegito",
     rating: 5,
   },
   {
@@ -2836,6 +2847,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Goku/6.jpg",
     ],
     category: "Dragon Ball",
+    character: "Goku",
     rating: 5,
   },
   {
@@ -2854,6 +2866,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Mario_Goku/5.jpg",
     ],
     category: "Dragon Ball",
+    character: "Goku",
     rating: 5,
   },
   {
@@ -2875,12 +2888,13 @@ export const featuredProducts: Product[] = [
     "/images/products/Goku_Super_Saiyan/8.jpg",
     ],
     category: "Dragon Ball",
+    character: "Goku",
     rating: 5,
   },
   {
     id: 186,
     slug: "Broly1",
-    name: "Broly1 (Cao 32cm) – Siêu Saiyan Huyền Thoại: Urban Vibes 🔥💚",
+    name: "Broly (Cao 32cm) – Siêu Saiyan Huyền Thoại: Urban Vibes 🔥💚",
     price: 325000,
     description:
       "📏 Kích thước: 32cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
@@ -2895,6 +2909,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Broly1/7.jpg",
     ],
     category: "Dragon Ball",
+    character: "Broly",
     rating: 5,
   },
   {
@@ -2915,6 +2930,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Vegeta11/7.jpg",
     ],
     category: "Dragon Ball",
+    character: "Vegeta",
     rating: 5,
   },
   {
@@ -2937,6 +2953,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Goku11/9.jpg",
     ],
     category: "Dragon Ball",
+    character: "Goku",
     rating: 5,
   },
   {
@@ -2957,6 +2974,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Goku_Super_Saiyan_3/7.jpg",
     ],
     category: "Dragon Ball",
+    character: "Goku",
     rating: 5,
   },
   {
@@ -2974,6 +2992,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Frieza/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Frieza",
     rating: 5,
   },
   {
@@ -2991,6 +3010,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Vegeta_Ultra_Ego/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Vegeta",
     rating: 5,
   },
   {
@@ -3008,6 +3028,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Super_Buu/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Super Buu",
     rating: 5,
   },
   {
@@ -3027,6 +3048,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Broly11/6.jpg",
     ],
     category: "Dragon Ball",
+    character: "Broly",
     rating: 5,
   },
   {
@@ -3044,6 +3066,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Perfect/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Perfect Cell",
     rating: 5,
   },
   {
@@ -3061,6 +3084,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Black_Frieza/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Frieza",
     rating: 5,
   },
   {
@@ -3078,6 +3102,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Beerus111/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Beerus",
     rating: 5,
   },
   {
@@ -3099,6 +3124,7 @@ export const featuredProducts: Product[] = [
 
     ],
     category: "Dragon Ball",
+    character: "Android 16",
     rating: 5,
   },
   {
@@ -3116,6 +3142,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Omega_Shenron/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Omega Shenron",
     rating: 5,
   },
   {
@@ -3133,6 +3160,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Golden_Cooler/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Cooler",
     rating: 5,
   },
   {
@@ -3150,6 +3178,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Cooler_Final_Form/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Cooler",
     rating: 5,
   },
   {
@@ -3167,6 +3196,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Golden1Frieza1/4.jpg",
     ],
     category: "Dragon Ball",
+    character: "Frieza",
     rating: 5,
   },
   {
@@ -3183,6 +3213,7 @@ export const featuredProducts: Product[] = [
     "/images/products/Jiren/3.jpg",
     ],
     category: "Dragon Ball",
+    character: "Jiren",
     rating: 5,
   },
 ]

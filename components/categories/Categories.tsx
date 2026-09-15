@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const categories = [
   {
-    title: "Anime",
+    title: "One Piece",
     image: "/images/categories/anime.jpg",
-    href: "/collections/anime",
+    href: "/collections/one-piece",
   },
   {
     title: "Marvel",
