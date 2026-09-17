@@ -7,9 +7,9 @@ import Container from "@/components/layout/Container";
 
 const categories = [
   {
-    title: "Anime",
+    title: "One Piece",
     image: "/images/categories/anime.png",
-    href: "/collections/anime",
+    href: "/collections/one-piece",
   },
   {
     title: "Marvel",

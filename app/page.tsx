@@ -31,10 +31,10 @@ export default function Home() {
       />
 
       <CollectionSection
-        title="Anime Collection"
-        description="Các nhân vật Anime nổi tiếng được in 3D sắc nét."
-        category="Anime"
-        href="/collections/anime"
+        title="One Piece Collection"
+        description="Những mô hình nhân vật One Piece được yêu thích tại 3D LAB."
+        category="One Piece"
+        href="/collections/one-piece"
         banner="/images/banners/anime.png"
       />
 
