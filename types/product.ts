@@ -8,7 +8,8 @@ export type ProductCategory =
   | "Pokemon"
   | "Móc khóa"
   | "Mô hình Mini"
-  | "Sonic";
+  | "Sonic"
+  | "Đồng giá 200K – 20cm";
 
 export type ProductBadge =
   | "Best Seller"

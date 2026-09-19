@@ -1,12 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import {
-  ChevronDown,
-  ChevronUp,
-  Loader2,
-  Search,
-} from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Loader2, Search } from "lucide-react";
 
 import ProductCard from "@/components/products/ProductCard";
 import type { Product } from "@/types/product";
@@ -25,9 +20,10 @@ export default function CollectionProducts({
   const [visibleCount, setVisibleCount] =
     useState(PRODUCTS_PER_LOAD);
 
-  const [loading, setLoading] = useState(false);
-
   const [search, setSearch] = useState("");
+
+  // Vị trí để IntersectionObserver theo dõi
+  const loadMoreRef = useRef<HTMLDivElement | null>(null);
 
   // Tìm kiếm sản phẩm
   const filteredProducts = useMemo(() => {
@@ -48,44 +44,50 @@ export default function CollectionProducts({
     visibleCount
   );
 
+  // Còn sản phẩm để load không?
   const hasMore =
     visibleCount < filteredProducts.length;
 
-  const handleClick = () => {
-    if (loading) return;
+  // Khi tìm kiếm thì quay lại 8 sản phẩm đầu
+  const handleSearch = (value: string) => {
+    setSearch(value);
+    setVisibleCount(PRODUCTS_PER_LOAD);
+  };
 
-    setLoading(true);
+  // Tự động load thêm khi kéo gần cuối
+  useEffect(() => {
+    if (!hasMore) return;
 
-    setTimeout(() => {
-      if (hasMore) {
+    const target = loadMoreRef.current;
+
+    if (!target) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+
+        if (!entry.isIntersecting) return;
+
         setVisibleCount((prev) =>
           Math.min(
             prev + PRODUCTS_PER_LOAD,
             filteredProducts.length
           )
         );
-      } else {
-        setVisibleCount(PRODUCTS_PER_LOAD);
-
-        document
-          .getElementById("collection-products")
-          ?.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
+      },
+      {
+        // Bắt đầu load trước khi chạm đáy 300px
+        rootMargin: "300px",
+        threshold: 0,
       }
+    );
 
-      setLoading(false);
-    }, 250);
-  };
+    observer.observe(target);
 
-  // Khi tìm kiếm thì quay lại 8 sản phẩm đầu
-  const handleSearch = (
-    value: string
-  ) => {
-    setSearch(value);
-    setVisibleCount(PRODUCTS_PER_LOAD);
-  };
+    return () => {
+      observer.disconnect();
+    };
+  }, [hasMore, filteredProducts.length]);
 
   if (products.length === 0) {
     return (
@@ -110,7 +112,6 @@ export default function CollectionProducts({
 
         {/* Header */}
         <div className="mb-6">
-
           <div className="flex items-end justify-between gap-4">
 
             <div>
@@ -158,7 +159,6 @@ export default function CollectionProducts({
               </button>
             )}
           </div>
-
         </div>
 
         {/* Không tìm thấy */}
@@ -191,7 +191,6 @@ export default function CollectionProducts({
           <>
             {/* Products */}
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
-
               {displayedProducts.map(
                 (product, index) => (
                   <div
@@ -208,51 +207,33 @@ export default function CollectionProducts({
                   </div>
                 )
               )}
-
             </div>
 
-            {/* Load more */}
-            {filteredProducts.length >
-              PRODUCTS_PER_LOAD && (
-              <div className="mt-12 flex justify-center">
+            {/* Tự động load thêm */}
+            {hasMore && (
+              <div
+                ref={loadMoreRef}
+                className="flex min-h-24 items-center justify-center"
+                aria-hidden="true"
+              >
+                <div className="flex items-center gap-2 text-sm text-slate-500">
+                  <Loader2
+                    size={18}
+                    className="animate-spin"
+                  />
 
-                <button
-                  onClick={handleClick}
-                  disabled={loading}
-                  className="inline-flex h-12 items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 font-semibold text-slate-700 transition-all duration-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
-                >
-
-                  {loading ? (
-                    <>
-                      <Loader2
-                        size={18}
-                        className="animate-spin"
-                      />
-
-                      Đang tải...
-                    </>
-                  ) : hasMore ? (
-                    <>
-                      Xem thêm sản phẩm
-
-                      <ChevronDown
-                        size={18}
-                      />
-                    </>
-                  ) : (
-                    <>
-                      Thu gọn
-
-                      <ChevronUp
-                        size={18}
-                      />
-                    </>
-                  )}
-
-                </button>
-
+                  Đang tải thêm sản phẩm...
+                </div>
               </div>
             )}
+
+            {/* Đã hiển thị hết */}
+            {!hasMore &&
+              filteredProducts.length > 0 && (
+                <div className="py-10 text-center text-sm text-slate-400">
+                  Đã hiển thị tất cả sản phẩm
+                </div>
+              )}
           </>
         )}
 

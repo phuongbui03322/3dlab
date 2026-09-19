@@ -39,6 +39,13 @@ const banners: Record<
   image: "/images/banners/anime.png",
 },
 
+"dong-gia-200k-20cm": {
+  title: "Đồng Giá 200K – 20cm",
+  description:
+    "Bộ sưu tập mô hình 3D đồng giá 200.000đ, chiều cao khoảng 20cm.",
+  image: "/images/banners/dong-gia-200k.png",
+},
+
   "dragon-ball": {
     title: "Dragon Ball Collection",
     description:
@@ -131,11 +138,14 @@ export default async function CollectionPage({
 
       return categories.some((cat) => {
         const slug = cat
-          .toLowerCase()
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .replace(/đ/g, "d")
-          .replace(/\s+/g, "-");
+  .toLowerCase()
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .replace(/đ/g, "d")
+  .replace(/[–—-]/g, " ")
+  .replace(/[^a-z0-9\s]/g, "")
+  .trim()
+  .replace(/\s+/g, "-");
 
         return slug === category;
       });

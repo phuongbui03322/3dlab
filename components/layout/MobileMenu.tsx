@@ -598,6 +598,13 @@ const [dragonBallOpen, setDragonBallOpen] = useState(false);
               onClose={onClose}
             />
 
+            <CategoryItem
+  title="Đồng giá 200K – 20cm"
+  href="/collections/dong-gia-200k-20cm"
+  count={categoryCount["Đồng giá 200K – 20cm"] ?? 0}
+  onClose={onClose}
+/>
+
             {/* =================================
                 GIỎ HÀNG
             ================================== */}
@@ -836,9 +843,15 @@ function CategoryItem({
     >
       <div className="flex min-w-0 items-center gap-2">
 
-        <span className="truncate">
-          {title}
-        </span>
+        <span
+  className={
+    title === "Đồng giá 200K – 20cm"
+      ? "animate-price-category truncate font-extrabold text-red-700"
+      : "truncate"
+  }
+>
+  {title}
+</span>
 
         <span className="
           shrink-0

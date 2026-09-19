@@ -329,3 +329,21 @@ main {
       0 0 12px rgba(239, 68, 68, 0.5);
   }
 }
+@keyframes priceCategoryZoom {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.7;
+  }
+}
+
+.animate-price-category {
+  display: inline-block;
+  animation: priceCategoryZoom 1.3s ease-in-out infinite;
+  transform-origin: left center;
+}
