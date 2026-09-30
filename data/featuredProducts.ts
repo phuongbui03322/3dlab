@@ -1128,7 +1128,7 @@ export const featuredProducts: Product[] = [
     id: 62,
     slug: "KNUCKLES",
     name: "KNUCKLES (Cao 30cm) – CHIẾN BINH ĐỎ HUYỀN THOẠI SONIC 🔴🥊🔥",
-    price: 330000,
+    price: 355000,
     description:
       "📏 Kích thước: 30cm \n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
     image: "/images/products/KNUCKLES/1.jpg",
@@ -3849,10 +3849,10 @@ export const featuredProducts: Product[] = [
 {
   id: 238,
   slug: "mohinh11",
-  name: "Mô hình 11 (Cao 20cm)",
-  price: 200000,
+  name: "Mô hình 11 (Cao 30cm)",
+  price: 325000,
   description:
-    "📏 Kích thước: 20cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
+    "📏 Kích thước: 30cm\n\nMô hình được in 3D với độ chi tiết cao, phù hợp để trưng bày tại góc làm việc, kệ tủ hoặc sưu tầm.",
   image: "/images/200/11.jpg",
   gallery: [
     "/images/200/11.jpg",
